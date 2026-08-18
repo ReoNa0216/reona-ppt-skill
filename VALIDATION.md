@@ -1,0 +1,51 @@
+# Validation
+
+## Purpose
+
+The comparison tested observable planning behavior rather than whether the proposed `SKILL.md` looked cleaner. Both versions stopped immediately before `ppt-master`; the downstream visual pipeline was unchanged and therefore excluded from the causal comparison.
+
+## Test Set
+
+Four realistic scientific presentation tasks were used:
+
+1. **Progress Update** — four independent research/software workstreams.
+2. **Journal Club** — a complex multi-Figure mechanism paper.
+3. **Idea Discussion** — a new direction with authoritative scope, storyboard, and asset guidance.
+4. **Mixed Deck** — Progress and Idea sections in one visually unified lab-meeting deck.
+
+The v1 and v2 runners received the same source boundaries and were isolated from each other, the rubric, existing finished decks, and prior outputs. A separate evaluator received only anonymized A/B artifacts and the scoring rubric.
+
+## First A/B Evaluation
+
+| Task | v1 | v2 | Observed difference |
+|---|---:|---:|---|
+| Progress Update | 19 | 20 | v2 separated user workflow evidence from software release maturity. |
+| Journal Club | 20 | 19 | v2 initially compressed readout qualification and mechanistic proximity from one Figure into one slide. |
+| Idea Discussion | 18 | 20 | v2 made evidence status, success/failure criteria, and claim-level falsifiers explicit. |
+| Mixed Deck | 19 | 20 | v2 produced a more executable section-routed production contract. |
+| **Total** | **76** | **79** | **v2 passed the upgrade threshold without new severe claim risks.** |
+
+## Targeted Journal Recheck
+
+One narrow rule was added: when a source Figure supports sequential claims at different evidence levels, the claims should be split across slides when necessary rather than merged because they share a Figure number.
+
+The Journal task was regenerated and evaluated anonymously:
+
+- baseline output: `18/20`;
+- patched v2 output: `20/20`.
+
+The recheck also led to two general safeguards:
+
+- preserve the source's exact statistic name, denominator/subset, threshold, analysis unit, and locator;
+- treat archetype maps as planning worksheets and `scientific_handoff.md` as the single canonical production contract.
+
+## Release Decision
+
+The v2 skill was accepted because:
+
+- Progress did not regress;
+- Idea and Mixed showed substantive improvements;
+- no new severe scientific-claim risk was found;
+- the only Journal weakness was corrected and re-tested;
+- the final skill passed structural validation and contains no project-specific scientific example.
+
