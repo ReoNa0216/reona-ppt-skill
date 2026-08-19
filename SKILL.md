@@ -22,7 +22,7 @@ Route mixed decks section by section. Cover, agenda, transition, and closing pag
 ### 2. Audit sources and freeze claims
 
 - For research results, read the authoritative manuscript/report, methods, legends, and final figures before outlining. For software, inspect the current official repository and release documentation, not an older local copy.
-- Build the planning artifact required by each routed workflow: `progress_map.md`, `journal_map.md`, or `design_freeze.md` plus `claim_evidence_map.md`.
+- Build the planning artifact required by each routed workflow: `progress_map.md`, `journal_map.md` (plus `understanding_map.md` when the Journal Club runs in Deep-read mode), or `design_freeze.md` plus `claim_evidence_map.md`.
 - Freeze each consequential claim as `claim → source → displayed evidence → analysis unit → boundary → evidence status`.
 - Use audience-readable descriptions, never internal folder or module names. Introduce each dataset before its result: what was sampled, what comparison it supports, and what it cannot answer.
 - Distinguish **established / source-supported / inference / proposal** in planning. Do not expose these audit labels on slides unless they help the audience.

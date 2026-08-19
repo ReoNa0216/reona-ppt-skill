@@ -4,6 +4,24 @@ Use for a paper deep-dive whose scientific question, evidence chain, methods, li
 
 Read the primary paper, methods, figure legends, and relevant supplementary figures before planning. Verify that each selected panel is the panel described in the slide and notes.
 
+## Inputs and mode
+
+| Input | Required | Role |
+|---|---|---|
+| Primary paper PDF | Yes | factual authority for numbers, results, and claims |
+| Supplementary PDF | No | extends the evidence chain |
+| ChatGPT dialogue / personal notes (markdown file path) | No | how *you* came to understand the paper |
+
+- **Standard mode** — primary PDF only (plus supplement if provided).
+- **Deep-read mode** — the user also gives a dialogue/notes file path. Whenever a dialogue or notes file is provided, plan in Deep-read mode; do not ask whether it should be used.
+- Read the dialogue file from its path and extract the question chain; never paste raw dialogue into the deck.
+
+## Source hierarchy (hard rule)
+
+- **Factual authority**: paper / supplement > dialogue. Every number, statistic, and conclusion that first appears in the dialogue must be re-checked against the PDF before it may become a claim. Dialogue decides *how* to present and *what* to emphasize; it never decides *what the facts are*.
+- **Interpretive priority**: the user's question chain and personal notes > a generic paper summary. Lead with what the reader actually asked and where they got stuck.
+- Do not inherit a dialogue paraphrase as a claim; if it conflicts with the paper, stop and re-audit the claim registry.
+
 ## Audience question
 
 > 这篇文章究竟解决了什么问题？作者用什么证据一步步支持结论？哪些地方成立、哪些地方没有证明？我们能学走什么？
@@ -37,6 +55,21 @@ For each main figure or selected panel:
 | Method worth learning | only if method matters for the user's learning goal |
 | Link to next figure | why the next experiment is needed |
 
+## Planning artifact: `understanding_map.md` (Deep-read mode only)
+
+When a dialogue/notes file is provided, also produce `understanding_map.md`. Extract only what changed understanding; do not mechanically preserve whole ChatGPT answers.
+
+| Section | Content |
+|---|---|
+| Question chain | what I first failed to understand; what question each answer raised next; which question ultimately changed my reading |
+| Key conceptual hurdles | concept; why it was hard; the explanation that worked; whether it needs onboarding on a slide |
+| Interpretation / insight | my understanding; the source passage; status (`source-supported` / `interpretation`) |
+| Critical points | what I doubted; whether the paper actually resolves it; how to phrase the boundary in the deck |
+| Methods worth learning | method; why it is worth learning; whether to expand Methods |
+| Relevance to my work | directly reusable / inspiring only / must not extrapolate |
+
+The understanding map shapes section order, figure emphasis, and speaker notes; it never overrides the paper as the factual source.
+
 ## Narrative grammar
 
 Default structure:
@@ -48,6 +81,8 @@ Default structure:
 5. **Critical synthesis** — what is genuinely new, what remains uncertain, and what is transferable to the user's work.
 
 Do not mechanically show every panel. A figure can be summarized if its only role is robustness or a secondary control. Keep the main evidence large enough to read.
+
+**Deep-read mode**: use the question chain from `understanding_map.md` as the primary section hooks. The deck should read as *「我带着什么问题读 → 哪一步让我真正相信 → 哪一步我仍不接受 → 这对我们有什么用」*, not as Introduction → Figure 1 → Figure 2 → Conclusion. Surface the reader's conceptual hurdles as onboarding moments and their doubts as explicit critique.
 
 Title figure slides by the scientific question or supported conclusion, not by “Figure 3” alone. Use the source figure number only as a locator.
 
@@ -75,6 +110,8 @@ For figure-heavy slides, notes may be longer than other deck types. Prefer this 
 6. bridge to why the next figure is necessary.
 
 Avoid reciting every panel if it does not change the inference.
+
+**Deep-read mode**: prefer the reader's own understanding journey in notes — what was hard, which explanation finally worked, what you still doubt — over a neutral walkthrough. Keep statistics, results, and boundaries locked to the paper.
 
 ## Closing rule
 

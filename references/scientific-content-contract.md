@@ -5,7 +5,7 @@ Use this contract after archetype-specific planning and before `ppt-master` visu
 ## Required Planning Artifacts
 
 - Progress Update section: `progress_map.md`.
-- Journal Club section: `journal_map.md`.
+- Journal Club section: `journal_map.md` (plus `understanding_map.md` when a dialogue/notes file is provided, i.e. Deep-read mode).
 - Idea Discussion section: `design_freeze.md` and `claim_evidence_map.md`.
 - Every deck, including a mixed deck: one unified `scientific_handoff.md`.
 
