@@ -15,9 +15,9 @@ Complete this gate before entering the `ppt-master` Strategist.
 
 - **Progress Update** — recent work, completed analyses, software/tool progress, and project status. Read [workflows/progress-update.md](workflows/progress-update.md).
 - **Journal Club** — a paper or small paper set whose evidence chain must be taught and critiqued. Read [workflows/journal-club.md](workflows/journal-club.md).
-- **Idea Discussion** — a proposed scientific direction, model, experiment, or project requiring scope control and falsifiable design. Read [workflows/idea-discussion.md](workflows/idea-discussion.md).
+- **Idea Discussion** — a proposed scientific direction, model, experiment, or project requiring scope control and falsifiable design. Interactive planning-only by default: no approved Design Freeze, no PPT production. Read [workflows/idea-discussion.md](workflows/idea-discussion.md).
 
-Route mixed decks section by section. Cover, agenda, transition, and closing pages inherit the routed scientific sections; they do not need their own archetype. Keep one visual system across all sections without forcing them into one narrative grammar.
+Route mixed decks section by section. Cover, agenda, transition, and closing pages inherit the routed scientific sections; they do not need their own archetype. Keep one visual system across all sections without forcing them into one narrative grammar. Deck-level production waits until every Idea section has an approved freeze.
 
 ### 2. Audit sources and freeze claims
 

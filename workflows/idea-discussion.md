@@ -2,29 +2,63 @@
 
 Use for proposed projects, new scientific directions, modeling ideas, experiment design, grant-style internal discussion, or any deck where the core task is to decide whether an idea is scientifically coherent and executable.
 
+## Default behavior: interactive planning-only
+
+A section routed to Idea Discussion is planning-only by default. Without an approved Design Freeze, do not hand off to `ppt-master`, do not generate the PPT, and do not write the final storyboard.
+
+Planning follows this one-way flow:
+
+```text
+DISCOVERY → FREEZE_DRAFT → USER_REVIEW → APPROVED_FREEZE → handoff → ppt-master
+```
+
+`USER_REVIEW` is a **hard stop**: show the Freeze Draft summary, list frozen vs not-yet-frozen items, ask only high-leverage unresolved questions, then wait for approval. `USER_REVIEW → ppt-master` is never allowed.
+
+### Two ways to skip the default
+
+**Case A — an approved freeze is already provided.** Recognize keywords such as `approved / final / frozen / 已确认 / 已冻结 / 可以按此制作`.
+
+**Case B — the user explicitly skips confirmation.** For example: *不要问我，直接按最佳判断制作。* Even then, generate the Design Freeze internally and treat it as auto-approved.
+
+### Mixed-deck rule
+
+In a mixed deck, deck-level production waits until **every** Idea section has an approved freeze. Other sections may finish their own planning; no final deck is produced while any Idea section is unapproved.
+
+## DISCOVERY: evidence-first interview
+
+Entering `DISCOVERY`, follow `references/evidence-first-interview.md`: **read first, then ask.**
+
+- Read every user file and pre-fill what the material already supports.
+- Ask only 1–4 high-leverage questions per round.
+- With no decision-changing uncertainty, auto-enter `FREEZE_DRAFT`; do not keep probing.
+
 ## Audience question
 
 > 这个问题值得做吗？我们到底要解释什么？现有证据与能力支持到哪里？方案如何被证伪？一期和长期愿景的边界在哪里？
 
-## Planning artifact 1: `design_freeze.md`
+## Planning artifact 1: `design_freeze_draft.md` → `design_freeze.md`
 
-Freeze before slide writing:
+Produce `design_freeze_draft.md` in `FREEZE_DRAFT`; rename to `design_freeze.md` on approval. Thirteen items:
 
 1. **Clinical/scientific problem** — one sentence.
 2. **Why current approaches are insufficient** — evidence-based gap, not marketing language.
-3. **Established biological anchor(s)** — what is already supported experimentally.
-4. **Current platform capability** — what can actually be measured now.
-5. **Hard technical boundaries** — destructive sampling, annotation uncertainty, sample access, etc.
-6. **Phase I scientific question** — the smallest independently valuable question.
-7. **Model/experimental hypothesis** — what mechanism or state transition is being learned/tested.
-8. **Explicit exclusions** — what Phase I will not claim.
-9. **Success criteria** — what would count as a meaningful positive result.
-10. **Falsification / failure criteria** — what result would invalidate the proposed approach.
-11. **Phase II gate** — what new data/evidence is required before expanding scope.
+3. **Established evidence** — what is already supported experimentally (status: `established` / `source-supported`).
+4. **Inferences** — reasonable synthesis from evidence, not directly tested (status: `inference`).
+5. **Current platform capability** — what can actually be measured now.
+6. **Hard technical boundaries** — destructive sampling, annotation uncertainty, sample access, etc.
+7. **Phase I scientific question** — the smallest independently valuable question.
+8. **Model/experimental hypothesis** — what mechanism or state transition is being learned/tested.
+9. **Explicit exclusions** — what Phase I will not claim.
+10. **Success criteria** — what would count as a meaningful positive result.
+11. **Falsification / failure criteria** — what result would invalidate the proposed approach.
+12. **Phase II gate** — what new data/evidence is required before expanding scope.
+13. **Open questions** — remaining high-leverage questions (also written to `open_questions.md`).
 
 Do not begin slide planning until the user-provided authoritative design memo, storyboard, and asset list have been reconciled when such materials exist. Preserve their declared priority order.
 
-## Planning artifact 2: `claim_evidence_map.md`
+## Planning artifact 2: `claim_evidence_map_draft.md` → `claim_evidence_map.md`
+
+Produce the draft in `FREEZE_DRAFT`; rename on approval.
 
 For every major claim:
 
@@ -53,7 +87,7 @@ The deck should feel like an argument, not a list of technologies.
 - Pair every main formula with a plain-language biological interpretation.
 - Show model hierarchy and assumptions visually; move derivations and full objectives to backup slides.
 - Do not claim unseen-perturbation generalization unless perturbation diversity and representation actually support that claim.
-- Do not turn a named model family, mathematical complexity, or “AI” label into the scientific contribution; the contribution must be the biological question it makes testable.
+- Do not turn a named model family, mathematical complexity, or "AI" label into the scientific contribution; the contribution must be the biological question it makes testable.
 
 ## Asset rule
 
@@ -66,3 +100,7 @@ Classify every visual as:
 ## Closing rule
 
 End with a **phased evidence-gated roadmap**, not a grand universal vision. Later stages should be explicitly conditional on Phase I success.
+
+## After approval
+
+Once `APPROVED_FREEZE`, produce `scientific_handoff.md` (per `references/scientific-content-contract.md`) and hand off to `ppt-master`. Visual review and export belong to `ppt-master`; the ReoNa-specific final checks are in the SKILL.md "Handoff And Final Review" section.

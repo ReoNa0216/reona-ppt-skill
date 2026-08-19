@@ -6,7 +6,7 @@ Use this contract after archetype-specific planning and before `ppt-master` visu
 
 - Progress Update section: `progress_map.md`.
 - Journal Club section: `journal_map.md` (plus `understanding_map.md` when a dialogue/notes file is provided, i.e. Deep-read mode).
-- Idea Discussion section: `design_freeze.md` and `claim_evidence_map.md`.
+- Idea Discussion section: `design_freeze_draft.md` → `design_freeze.md`, `claim_evidence_map_draft.md` → `claim_evidence_map.md`, and `open_questions.md`.
 - Every deck, including a mixed deck: one unified `scientific_handoff.md`.
 
 For a mixed deck, label each planning-artifact section clearly and merge its claims and slide roster into the single handoff. Do not invent a causal connection between independent sections.
