@@ -49,3 +49,12 @@ The v2 skill was accepted because:
 - the only Journal weakness was corrected and re-tested;
 - the final skill passed structural validation and contains no project-specific scientific example.
 
+## Post-v2 Additions (unvalidated)
+
+After the v2 release above, two features were added and have not yet gone through the same A/B evaluation:
+
+- **Journal Club Deep-read mode** — `understanding_map.md` derived from a ChatGPT dialogue/notes file, with a paper/dialogue source hierarchy.
+- **Idea Discussion interactive planning-only gate** — evidence-first interview, `USER_REVIEW` hard stop, and Design Freeze approval before production.
+
+These are documented in their workflows but carry no validation score yet.
+

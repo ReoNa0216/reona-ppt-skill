@@ -29,8 +29,8 @@ SVG / PPTX / PDF / speaker notes
 ## Workflows
 
 - `workflows/progress-update.md`: independent workstreams, strongest evidence, completion status, and software user flows.
-- `workflows/journal-club.md`: paper map, Figure evidence chain, teaching logic, and conclusion boundaries.
-- `workflows/idea-discussion.md`: scope freeze, evidence status, falsification, phase gates, and model/formula roles.
+- `workflows/journal-club.md`: paper map, Figure evidence chain, teaching logic, and conclusion boundaries; Deep-read mode adds an `understanding_map.md` from a ChatGPT dialogue/notes file.
+- `workflows/idea-discussion.md`: interactive planning-only by default (evidence-first interview + Design Freeze approval), scope freeze, evidence status, falsification, phase gates, and model/formula roles.
 
 A mixed deck routes sections independently while sharing one visual identity and one canonical `scientific_handoff.md`.
 

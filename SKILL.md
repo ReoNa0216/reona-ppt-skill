@@ -22,7 +22,7 @@ Route mixed decks section by section. Cover, agenda, transition, and closing pag
 ### 2. Audit sources and freeze claims
 
 - For research results, read the authoritative manuscript/report, methods, legends, and final figures before outlining. For software, inspect the current official repository and release documentation, not an older local copy.
-- Build the planning artifact required by each routed workflow: `progress_map.md`, `journal_map.md` (plus `understanding_map.md` when the Journal Club runs in Deep-read mode), or `design_freeze.md` plus `claim_evidence_map.md`.
+- Build the planning artifact required by each routed workflow: `progress_map.md`, `journal_map.md` (plus `understanding_map.md` when the Journal Club runs in Deep-read mode), or `design_freeze_draft.md` → `design_freeze.md` plus `claim_evidence_map_draft.md` → `claim_evidence_map.md`.
 - Freeze each consequential claim as `claim → source → displayed evidence → analysis unit → boundary → evidence status`.
 - Use audience-readable descriptions, never internal folder or module names. Introduce each dataset before its result: what was sampled, what comparison it supports, and what it cannot answer.
 - Distinguish **established / source-supported / inference / proposal** in planning. Do not expose these audit labels on slides unless they help the audience.
@@ -55,8 +55,8 @@ Keep this identity unless the user explicitly overrides it:
 - Canvas: 16:9, `1280 × 720`.
 - Palette: primary `#5B2C83`; dark purple `#321748`; secondary `#76529B`; pale purple `#F3F0F6`; text `#17131A`; secondary text `#655E6B`; border `#D8D2DC`. Green `#27856A` means completed/positive; red `#B84A62` means risk/failure.
 - Chinese title/body: Microsoft YaHei. Latin body: Arial. Large metrics and mathematical variables: Georgia. Technical identifiers only: Consolas.
-- Size anchors: cover title `64`; slide title `34–36`; context line `18`; body `18`; annotation `13–14`; metric `30–42`; footer `11`.
-- Vertical anchors: section label near `y=49`; title near `y=91`; context line near `y=137`; main content from `y≈177`. Treat these as stable anchors, not permission to compress an overloaded page.
+- Size starting points: cover title `64`; slide title `34–36`; context line `18`; body `18`; annotation `13–14`; metric `30–42`; footer `11`. Defaults, not hard limits.
+- Vertical starting points: section label near `y=49`; title near `y=91`; context line near `y=137`; main content from `y≈177`. `ppt-master`'s Strategist may adjust these for readability, but never to compress an overloaded page.
 - Keep titles to one line when reasonable. Give title, context line, and main content visibly separate vertical space.
 - Prefer white space, large evidence, simple dividers, and at most one pale information box. Avoid decorative card grids, repeated badges, and generic takeaway bars.
 
@@ -73,7 +73,7 @@ Read [references/speaker-notes-protocol.md](references/speaker-notes-protocol.md
 
 ## Handoff And Final Review
 
-Give `ppt-master` the authoritative `scientific_handoff.md`, source manifest, and asset plan, then follow its production and export pipeline without duplicating it here.
+Give `ppt-master` the authoritative `scientific_handoff.md`, source manifest, and asset plan, then follow its production and export pipeline without duplicating it here. Hand the Fixed Visual System as brand constraints: palette and fonts via the `reona_tsinghua` Brand workspace, whitespace/guardrail preferences as a style brief, and the size/vertical numbers as soft starting points — never a locked layout template.
 
 After generation, inspect every rendered page at presentation scale and apply these ReoNa-specific checks:
 
