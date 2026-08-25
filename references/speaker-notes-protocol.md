@@ -15,11 +15,19 @@ Explain, when relevant:
 
 Do not repeat the title, narrate page layout, expose internal filenames/folder names, or spell quantities with Chinese numeral words. Define abbreviations at first audience-facing use. If a visual is conceptual or demo data, say so explicitly.
 
+After the visible slide is final, run a bidirectional consistency check:
+
+- every claim-bearing figure, table, screenshot, schematic, and formula on the slide is explained in the notes;
+- every page-specific visual, number, version, label, or position mentioned in the notes still exists on the current slide;
+- quantities, analysis units, thresholds, evidence status, terminology, and software versions agree across slide, notes, and source manifest.
+
+Remove stale narration instead of preserving explanations for deleted or replaced content.
+
 ## Progress Update
 
 Use:
 
-`question → what materially changed → evidence/readout → result → boundary → status/decision`
+`starting premise / question → what materially changed → evidence/readout → result → boundary → status/decision`
 
 For independent workstreams, provide a clean transition without inventing a scientific causal link. For software, explain the user task, the friction removed, what the shown screen state demonstrates, and how work is saved or handed off.
 

@@ -36,8 +36,10 @@ Archetype-specific artifacts are planning worksheets; `scientific_handoff.md` is
 - Archetype:
 - Slide job:
 - Single conclusion:
+- Starting premise and source priority, for Progress when needed:
 - Context required:
 - Evidence / asset IDs:
+- Software release snapshot, if relevant:
 - Formula and biological role, if any:
 - Claim IDs:
 - Boundary to show or note:
@@ -54,6 +56,8 @@ Archetype-specific artifacts are planning worksheets; `scientific_handoff.md` is
 
 The handoff is authoritative for scientific content. `ppt-master` may improve layout and visual hierarchy, but it must not strengthen claims, change analysis units, merge evidence with proposals, or substitute a different source panel without re-auditing the claim registry.
 
+For a Progress workstream, preserve the `progress_map.md` truth lock in the handoff: starting premise, authoritative source order, strongest completed result, displayed evidence, analysis unit, and boundary. If later source review changes any of these, update the map and claim registry before changing the slide story.
+
 ## Asset Semantics
 
 - `evidence`: original scientific figure, verified data visualization, or current software screenshot.
@@ -61,7 +65,7 @@ The handoff is authoritative for scientific content. `ppt-master` may improve la
 - `formula`: mathematical expression used in scientific reasoning.
 - `decorative`: minimal and never claim-bearing.
 
-For evidence, identify the exact source and page/panel or software state. A crop is allowed only when approved and when it cannot alter interpretation. AI-generated explanatory assets must never resemble experimental data: do not fabricate axes, sample counts, error bars, microscopy, heatmaps, embeddings, or quantitative plots.
+For evidence, identify the exact source and page/panel or software state. For software evidence, also record the official repository reference, release/version, exact interface state, and whether the data are real or demonstrative. A crop is allowed only when approved and when it cannot alter interpretation. AI-generated explanatory assets must never resemble experimental data: do not fabricate axes, sample counts, error bars, microscopy, heatmaps, embeddings, or quantitative plots.
 
 ## Evidence Status
 

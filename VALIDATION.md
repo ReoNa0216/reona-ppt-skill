@@ -58,3 +58,15 @@ After the v2 release above, two features were added and have not yet gone throug
 
 These are documented in their workflows but carry no validation score yet.
 
+## Targeted Progress Maintenance Audit
+
+The later Progress refinement was intentionally narrower than a new major version and was not assigned a new A/B score. It was reviewed against four generic failure classes:
+
+| Scenario class | Required invariant |
+|---|---|
+| A workstream starts from a preset scientific or operational premise | The premise and authoritative source order are frozen before result or figure selection. |
+| An internal discovery is tested in one or more external datasets | Candidate definition and dataset roles remain fixed; primary-unit evidence is not promoted to independent-unit validation. |
+| A software workstream changes release or interface version | Repository reference, release maturity, screenshot provenance, data identity, notes, and manifest remain on one release snapshot. |
+| Visible content is deleted or replaced late in production | Notes are checked in both directions and cannot retain page-specific descriptions of removed content. |
+
+The update passed the skill structural validator, Markdown-reference check, diff whitespace check, and a project-specific-term sweep. It adds no domain-specific project name, result, dataset, software version, fixed page count, or locked layout. A new independent A/B score should be reserved for a future full four-archetype validation cycle rather than inferred from this maintenance audit.

@@ -6,6 +6,8 @@ A Codex skill for PI-facing scientific presentations in a fixed Tsinghua-purple 
 
 - Section-level routing for **Progress Update**, **Journal Club**, **Idea Discussion**, and mixed lab-meeting decks.
 - A mandatory Scientific Planning Gate before visual production.
+- Progress workstream truth locks for starting premise, source priority, strongest completed result, and displayed evidence.
+- Software release snapshots and bidirectional slide–notes–manifest consistency checks.
 - Source-verified claims tied to displayed evidence, analysis units, boundaries, and evidence status.
 - Separate handling of scientific evidence, software UI, explanatory schematics, and formulas.
 - Archetype-aware speaker notes and ReoNa-specific final QA.
@@ -28,7 +30,7 @@ SVG / PPTX / PDF / speaker notes
 
 ## Workflows
 
-- `workflows/progress-update.md`: independent workstreams, strongest evidence, completion status, and software user flows.
+- `workflows/progress-update.md`: workstream truth locks, optional external-validation grammar, strongest completed evidence, completion status, and software release-aware user flows.
 - `workflows/journal-club.md`: paper map, Figure evidence chain, teaching logic, and conclusion boundaries; Deep-read mode adds an `understanding_map.md` from a ChatGPT dialogue/notes file.
 - `workflows/idea-discussion.md`: interactive planning-only by default (evidence-first interview + Design Freeze approval), scope freeze, evidence status, falsification, phase gates, and model/formula roles.
 
@@ -56,7 +58,7 @@ Use $reona-ppt-skill to plan this mixed lab-meeting deck and complete the scient
 
 ## Validation
 
-The v2 workflow was forward-tested against v1 on four realistic planning tasks: Progress Update, Journal Club, Idea Discussion, and Mixed Deck. Independent A/B evaluation scored v1 at `76/80` and v2 at `79/80`; a targeted Journal Club fix then scored `20/20` in re-evaluation. See [VALIDATION.md](VALIDATION.md).
+The v2 workflow was forward-tested against v1 on four realistic planning tasks: Progress Update, Journal Club, Idea Discussion, and Mixed Deck. Independent A/B evaluation scored v1 at `76/80` and v2 at `79/80`; a targeted Journal Club fix then scored `20/20` in re-evaluation. The later Progress refinement passed a separate generic-invariant maintenance audit without being assigned a new A/B score. See [VALIDATION.md](VALIDATION.md).
 
 ## Scope
 
@@ -65,4 +67,3 @@ This is a scientific planning, narrative, fixed-style, and QA layer. It is not a
 ## License
 
 No license has been selected yet.
-
