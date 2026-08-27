@@ -40,7 +40,7 @@ A mixed deck routes sections independently while sharing one visual identity and
 
 - Codex skill support.
 - An available `ppt-master` skill for visual production and export.
-- Microsoft YaHei, Arial, Georgia, and Consolas are the preferred fonts for the fixed visual system.
+- Microsoft YaHei, Arial, Georgia, and Consolas are the preferred text fonts; displayed and inline equations use Computer Modern or Latin Modern through math rendering.
 
 This repository does not vendor `ppt-master`.
 
@@ -58,7 +58,7 @@ Use $reona-ppt-skill to plan this mixed lab-meeting deck and complete the scient
 
 ## Validation
 
-The v2 workflow was forward-tested against v1 on four realistic planning tasks: Progress Update, Journal Club, Idea Discussion, and Mixed Deck. Independent A/B evaluation scored v1 at `76/80` and v2 at `79/80`; a targeted Journal Club fix then scored `20/20` in re-evaluation. The later Progress refinement passed a separate generic-invariant maintenance audit without being assigned a new A/B score. See [VALIDATION.md](VALIDATION.md).
+The v2 workflow was forward-tested against v1 on four realistic planning tasks: Progress Update, Journal Club, Idea Discussion, and Mixed Deck. Independent A/B evaluation scored v1 at `76/80` and v2 at `79/80`; a targeted Journal Club fix then scored `20/20` in re-evaluation. Later Progress and Idea/QA refinements passed separate generic-invariant maintenance audits without being assigned new A/B scores. See [VALIDATION.md](VALIDATION.md).
 
 ## Scope
 

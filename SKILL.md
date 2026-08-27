@@ -40,7 +40,7 @@ Read [references/scientific-content-contract.md](references/scientific-content-c
 - Expand each abbreviation at first audience-facing use with a Chinese explanation or English full name. Use Arabic numerals for quantities in slides and notes.
 - External research or model knowledge may expand context only when the user requests it; keep it distinguishable from source-derived claims.
 - Never use AI-generated images as experimental evidence. Use them only for clearly explanatory schematics, workflows, conceptual mechanisms, or non-data illustrations.
-- If a formula belongs in the main deck, pair it with one plain-language sentence stating its biological role. Put derivations and full objectives in backup slides.
+- If a formula belongs in the main deck, pair it with one plain-language sentence stating its biological role. Render it as mathematics; never simulate subscripts or superscripts with ordinary body text. Put derivations and full objectives in backup slides.
 
 ## Software Storytelling
 
@@ -54,7 +54,7 @@ Keep this identity unless the user explicitly overrides it:
 
 - Canvas: 16:9, `1280 × 720`.
 - Palette: primary `#5B2C83`; dark purple `#321748`; secondary `#76529B`; pale purple `#F3F0F6`; text `#17131A`; secondary text `#655E6B`; border `#D8D2DC`. Green `#27856A` means completed/positive; red `#B84A62` means risk/failure.
-- Chinese title/body: Microsoft YaHei. Latin body: Arial. Large metrics and mathematical variables: Georgia. Technical identifiers only: Consolas.
+- Chinese title/body: Microsoft YaHei. Latin body: Arial. Large metrics: Georgia. Displayed and inline equations: Computer Modern or Latin Modern through math rendering. Technical identifiers only: Consolas.
 - Size starting points: cover title `64`; slide title `34–36`; context line `18`; body `18`; annotation `13–14`; metric `30–42`; footer `11`. Defaults, not hard limits.
 - Vertical starting points: section label near `y=49`; title near `y=91`; context line near `y=137`; main content from `y≈177`. `ppt-master`'s Strategist may adjust these for readability, but never to compress an overloaded page.
 - Keep titles to one line when reasonable. Give title, context line, and main content visibly separate vertical space.
@@ -75,13 +75,13 @@ Read [references/speaker-notes-protocol.md](references/speaker-notes-protocol.md
 
 Give `ppt-master` the authoritative `scientific_handoff.md`, source manifest, and asset plan, then follow its production and export pipeline without duplicating it here. Hand the Fixed Visual System as brand constraints: palette and fonts via the `reona_tsinghua` Brand workspace, whitespace/guardrail preferences as a style brief, and the size/vertical numbers as soft starting points — never a locked layout template.
 
-After generation, inspect every rendered page at presentation scale and apply these ReoNa-specific checks:
+After generation, inspect the source render, then re-inspect every page rendered from the final PPTX or exported PDF at presentation scale. Sign off on the final exported artifact; a correct source render is not sufficient. Apply these ReoNa-specific checks:
 
 - the shown panel or screenshot directly supports the stated claim;
 - figure identity, sample counts, analysis units, abbreviations, and evidence status are correct;
-- scientific figures are legible, schematics cannot be mistaken for data, and formula meaning is explicit;
+- scientific figures are legible, schematics cannot be mistaken for data, formula meaning is explicit, and equation fonts, symbols, subscripts, and superscripts survive export correctly;
 - no text, caption, or label overlaps or crosses its container;
 - notes explain question, production/readout, result, boundary, and transition where relevant;
-- slides, notes, screenshots, and source manifests agree on numbers, analysis units, terminology, evidence identity, and software version; notes do not describe removed or replaced content;
+- slides, notes, screenshots, and source manifests agree on numbers, analysis units, terminology, evidence identity, and software version; removed or replaced claims, visuals, terms, and versions do not survive in any of them;
 - no section silently expands beyond its frozen scope;
 - no generic summary or next-step page appears only for symmetry. End with completed outputs, critical synthesis, or an evidence-gated decision appropriate to the routed workflow.

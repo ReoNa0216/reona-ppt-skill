@@ -70,3 +70,17 @@ The later Progress refinement was intentionally narrower than a new major versio
 | Visible content is deleted or replaced late in production | Notes are checked in both directions and cannot retain page-specific descriptions of removed content. |
 
 The update passed the skill structural validator, Markdown-reference check, diff whitespace check, and a project-specific-term sweep. It adds no domain-specific project name, result, dataset, software version, fixed page count, or locked layout. A new independent A/B score should be reserved for a future full four-archetype validation cycle rather than inferred from this maintenance audit.
+
+## Targeted Idea And Export Maintenance Audit
+
+The later Idea/QA refinement was also treated as a narrow maintenance update and was not assigned a new A/B score. It was reviewed against these generic failure classes:
+
+| Scenario class | Required invariant |
+|---|---|
+| A costly modality or complex model is proposed | The strongest credible simpler alternative is explicit, and failure to outperform it limits the necessity claim. |
+| A named method appears before the scientific data object is understood | The audience first learns the data object, information lost by a simpler summary, required representation, candidate methods, and selection criteria. |
+| Generalization or transfer is claimed | The held-out unit, grouping rule, allowed calibration, and claim boundary are defined. |
+| An indirect readout may be confounded | An independent cross-check is included when it changes the scientific decision. |
+| Source rendering and final export differ | Final sign-off uses pages rendered from the delivered PPTX or PDF and rechecks formula typography and layout. |
+
+The maintenance patch passed the skill structural validator, Markdown-reference check, diff whitespace check, and a project-specific-term sweep. It added no new planning artifact, did not enlarge the 13-item Design Freeze, and made conditional checks explicit rather than mandatory on every slide.

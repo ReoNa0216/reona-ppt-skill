@@ -35,15 +35,15 @@ Anything else is recorded as `future option / not required for Phase I`, not a b
 
 ### Ask
 
-> 一期核心目标是恢复 DTP dynamics，还是必须同时支持 unseen perturbation generalization？
+> 一期只需解释已测条件，还是必须同时支持未见干预的泛化？
 
-Because it changes: perturbation panel, model representation, benchmark.
+Because it changes: intervention panel, model representation, benchmark.
 
 ### Do not ask
 
-> 是否能做 isotope tracing？
+> 是否还要增加一项不影响一期结论的探索性实验？
 
-If isotope tracing is not required for Phase I to stand, record it as:
+If the extra experiment is not required for Phase I to stand, record it as:
 
 ```text
 future option / not required for Phase I

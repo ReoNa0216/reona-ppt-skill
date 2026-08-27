@@ -41,17 +41,17 @@ Entering `DISCOVERY`, follow `references/evidence-first-interview.md`: **read fi
 Produce `design_freeze_draft.md` in `FREEZE_DRAFT`; rename to `design_freeze.md` on approval. Thirteen items:
 
 1. **Clinical/scientific problem** — one sentence.
-2. **Why current approaches are insufficient** — evidence-based gap, not marketing language.
+2. **Why current approaches are insufficient** — evidence-based gap, not marketing language; name the strongest credible simpler or lower-cost alternative.
 3. **Established evidence** — what is already supported experimentally (status: `established` / `source-supported`).
 4. **Inferences** — reasonable synthesis from evidence, not directly tested (status: `inference`).
 5. **Current platform capability** — what can actually be measured now.
-6. **Hard technical boundaries** — destructive sampling, annotation uncertainty, sample access, etc.
-7. **Phase I scientific question** — the smallest independently valuable question.
+6. **Hard technical boundaries** — destructive sampling, annotation uncertainty, sample access, and, when relevant, confounding in an indirect readout plus an independent cross-check.
+7. **Phase I scientific question** — the smallest independently valuable question; freeze the analysis unit, input boundary, and experimental or prediction target before choosing a model.
 8. **Model/experimental hypothesis** — what mechanism or state transition is being learned/tested.
 9. **Explicit exclusions** — what Phase I will not claim.
-10. **Success criteria** — what would count as a meaningful positive result.
-11. **Falsification / failure criteria** — what result would invalidate the proposed approach.
-12. **Phase II gate** — what new data/evidence is required before expanding scope.
+10. **Success criteria** — what would count as a meaningful positive result, including comparison with the simplest and strongest credible alternative when a costly modality or complex model is proposed.
+11. **Falsification / failure criteria** — what result would invalidate the proposed approach; failure to outperform the credible alternative limits the necessity claim even when the new modality is informative.
+12. **Phase II gate** — what new data/evidence is required before expanding scope; if generalization or transfer is proposed, define the held-out unit, grouping rule, allowed calibration, and claim boundary.
 13. **Open questions** — remaining high-leverage questions (also written to `open_questions.md`).
 
 Do not begin slide planning until the user-provided authoritative design memo, storyboard, and asset list have been reconciled when such materials exist. Preserve their declared priority order.
@@ -81,13 +81,16 @@ Default argument chain:
 
 The deck should feel like an argument, not a list of technologies.
 
+Before introducing a named method, teach the audience what the data object is, what scientifically relevant information a simpler summary loses, and what representation or model must preserve. Then present candidate methods and selection criteria. Do not make the audience learn an external model before they can understand the scientific job it is meant to perform.
+
 ## Model and formula slides
 
 - A formula belongs in the main deck only if it clarifies the model's scientific role.
 - Pair every main formula with a plain-language biological interpretation.
 - Show model hierarchy and assumptions visually; move derivations and full objectives to backup slides.
-- Do not claim unseen-perturbation generalization unless perturbation diversity and representation actually support that claim.
+- Do not claim generalization unless the evidence supports it. Define what is held out and how it is grouped, distinguish within-domain generalization from cross-scenario transfer, and state whether the new setting requires calibration.
 - Do not turn a named model family, mathematical complexity, or "AI" label into the scientific contribution; the contribution must be the biological question it makes testable.
+- Do not preselect a named method as the winner when method choice is unresolved; compare plausible candidates by stability, held-out performance, interpretability, and the scientific information they preserve.
 
 ## Asset rule
 

@@ -41,6 +41,8 @@ Archetype-specific artifacts are planning worksheets; `scientific_handoff.md` is
 - Evidence / asset IDs:
 - Software release snapshot, if relevant:
 - Formula and biological role, if any:
+- Decision contract, for Idea slides when relevant: analysis unit / input boundary / target / strongest credible alternative / pass-fail comparison / generalization or transfer definition:
+- Independent cross-check, when the main readout is indirect or plausibly confounded:
 - Claim IDs:
 - Boundary to show or note:
 - Speaker-note job:
@@ -55,6 +57,8 @@ Archetype-specific artifacts are planning worksheets; `scientific_handoff.md` is
 ```
 
 The handoff is authoritative for scientific content. `ppt-master` may improve layout and visual hierarchy, but it must not strengthen claims, change analysis units, merge evidence with proposals, or substitute a different source panel without re-auditing the claim registry.
+
+The two conditional Idea fields above are not required on every slide. Use them only where they change the scientific decision; do not create extra planning artifacts or repeat the same contract page by page.
 
 For a Progress workstream, preserve the `progress_map.md` truth lock in the handoff: starting premise, authoritative source order, strongest completed result, displayed evidence, analysis unit, and boundary. If later source review changes any of these, update the map and claim registry before changing the slide story.
 
