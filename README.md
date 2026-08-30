@@ -7,7 +7,8 @@ A Codex skill for PI-facing scientific presentations in a fixed Tsinghua-purple 
 - Section-level routing for **Progress Update**, **Journal Club**, **Idea Discussion**, and mixed lab-meeting decks.
 - A mandatory Scientific Planning Gate before visual production.
 - Progress workstream truth locks for starting premise, source priority, strongest completed result, and displayed evidence.
-- Computational Progress ledgers that separate implementation, recorded execution, result evidence, and parameter-comparison scope.
+- Automatic Progress routing by claim dependency: computational, experimental, hybrid, or general.
+- Parallel evidence locks for computational execution/parameters and wet-lab design/execution/measurement, loaded only when relevant.
 - Software release snapshots and bidirectional slide–notes–manifest consistency checks.
 - Source-verified claims tied to displayed evidence, analysis units, boundaries, and evidence status.
 - Separate handling of scientific evidence, software UI, explanatory schematics, and formulas.
@@ -31,7 +32,9 @@ SVG / PPTX / PDF / speaker notes
 
 ## Workflows
 
-- `workflows/progress-update.md`: workstream truth locks, audience-priority routing, method teaching ladders, execution/parameter evidence ledgers, optional external-validation grammar, and software release-aware user flows.
+- `workflows/progress-update.md`: workstream truth locks, automatic evidence-profile routing, audience-priority teaching depth, optional external-validation grammar, and software release-aware user flows.
+  - `references/progress-computational-evidence.md`: execution, parameter-comparison scope, transfer, and computational teaching logic.
+  - `references/progress-wet-lab-evidence.md`: units and `n`, controls, performed execution, measurement validity, evidence maturity, and experimental teaching logic.
 - `workflows/journal-club.md`: paper map, Figure evidence chain, teaching logic, and conclusion boundaries; Deep-read mode adds an `understanding_map.md` from a ChatGPT dialogue/notes file.
 - `workflows/idea-discussion.md`: interactive planning-only by default (evidence-first interview + Design Freeze approval), scope freeze, evidence status, falsification, phase gates, and model/formula roles.
 
@@ -59,7 +62,7 @@ Use $reona-ppt-skill to plan this mixed lab-meeting deck and complete the scient
 
 ## Validation
 
-The v2 workflow was forward-tested against v1 on four realistic planning tasks: Progress Update, Journal Club, Idea Discussion, and Mixed Deck. Independent A/B evaluation scored v1 at `76/80` and v2 at `79/80`; a targeted Journal Club fix then scored `20/20` in re-evaluation. Later Progress and Idea/QA refinements passed separate generic-invariant maintenance audits without being assigned new A/B scores. See [VALIDATION.md](VALIDATION.md).
+The v2 workflow was forward-tested against v1 on four realistic planning tasks: Progress Update, Journal Club, Idea Discussion, and Mixed Deck. Independent A/B evaluation scored v1 at `76/80` and v2 at `79/80`; a targeted Journal Club fix then scored `20/20` in re-evaluation. Later refinements use clearly labeled maintenance or internal adversarial audits and do not inherit the independent A/B score. See [VALIDATION.md](VALIDATION.md).
 
 ## Scope
 

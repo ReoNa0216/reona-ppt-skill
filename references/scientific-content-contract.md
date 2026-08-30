@@ -34,16 +34,15 @@ Archetype-specific artifacts are planning worksheets; `scientific_handoff.md` is
 ## Slide roster
 ### Slide N — Audience-readable title
 - Archetype:
+- Progress evidence profile / current stage profile, when relevant:
 - Audience priority / required takeaway, for Progress:
 - Slide job:
 - Single conclusion:
 - Starting premise and source priority, for Progress when needed:
 - Context required:
 - Evidence / asset IDs:
-- Method stage — input / operation / output, for computational Progress when relevant:
-- Execution evidence / result artifact, for a claimed completed process when relevant:
-- Parameter provenance / evidence class / wording boundary, for an exact decision value when relevant:
-- Reusable rule / dataset-specific re-estimation / current instance, when transfer is discussed:
+- Computational lock, when relevant — stage input/operation/output; implementation/execution/result; parameter scope; transferable rule/current instance:
+- Experimental lock, when relevant — contrast/controls; units and exact n; performed execution; measurement/QC; evidence maturity; choice provenance:
 - Software release snapshot, if relevant:
 - Formula and scientific/biological role, if any:
 - Decision contract, for Idea slides when relevant: analysis unit / input boundary / target / strongest credible alternative / pass-fail comparison / generalization or transfer definition:
@@ -67,7 +66,11 @@ The two conditional Idea fields above are not required on every slide. Use them 
 
 For a Progress workstream, preserve the `progress_map.md` truth lock in the handoff: starting premise, authoritative source order, strongest completed result, displayed evidence, analysis unit, and boundary. If later source review changes any of these, update the map and claim registry before changing the slide story.
 
+Also preserve the automatically inferred evidence profile. A `hybrid` claim must retain the handoff between experimental generation/acquisition and computational processing/analysis; do not let one audited stage stand in for the other.
+
 For a computational Progress workstream, also preserve the distinction between implementation, recorded execution, and observed result. Exact parameters must retain their evidence class: full rerun comparison, local endpoint comparison, fixed-axis slice, perturbation stability, data-derived, diagnostic/nonbinding, or untested frozen constant. `ppt-master` may shorten the visible wording but may not promote one class into another.
+
+For an experimental Progress workstream, preserve the scientific contrast, controls, experimental versus nested observational units, exact `n`, actual execution, applicable validity/QC, exclusions or attrition, and evidence maturity. The visible slide may be concise, but it may not convert technical repeats into independent replication, a representative example into prevalence, or a QC-passed run into a confirmed biological result.
 
 When an old deck is supplied as a reference, record whether each reused element is a style/layout reference, an explanatory pattern, or current scientific evidence. Only the last role can support a claim, and only after current-source verification.
 

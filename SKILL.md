@@ -13,7 +13,7 @@ Complete this gate before entering the `ppt-master` Strategist.
 
 ### 1. Route each scientific section
 
-- **Progress Update** — recent work, completed analyses, software/tool progress, and project status. Read [workflows/progress-update.md](workflows/progress-update.md).
+- **Progress Update** — recent work, completed analyses or experiments, software/tool progress, and project status. Read [workflows/progress-update.md](workflows/progress-update.md); it automatically routes each workstream as computational, experimental, hybrid, or general and loads only the relevant evidence reference.
 - **Journal Club** — a paper or small paper set whose evidence chain must be taught and critiqued. Read [workflows/journal-club.md](workflows/journal-club.md).
 - **Idea Discussion** — a proposed scientific direction, model, experiment, or project requiring scope control and falsifiable design. Interactive planning-only by default: no approved Design Freeze, no PPT production. Read [workflows/idea-discussion.md](workflows/idea-discussion.md).
 
@@ -24,7 +24,9 @@ Route mixed decks section by section. Cover, agenda, transition, and closing pag
 - For research results, read the authoritative manuscript/report, methods, legends, and final figures before outlining. For Progress workstreams, also freeze the actual starting premise and source priority before selecting the strongest completed result. For software, inspect the current official repository and release documentation, not an older local copy.
 - Build the planning artifact required by each routed workflow: `progress_map.md`, `journal_map.md` (plus `understanding_map.md` when the Journal Club runs in Deep-read mode), or `design_freeze_draft.md` → `design_freeze.md` plus `claim_evidence_map_draft.md` → `claim_evidence_map.md`.
 - Freeze each consequential claim as `claim → source → displayed evidence → analysis unit → boundary → evidence status`.
+- For each Progress workstream, infer its evidence profile from what the claim depends on, not from topic keywords. Route a hybrid claim stage by stage; do not require the user to preselect dry-lab or wet-lab mode.
 - For computational Progress claims, distinguish `implemented in source → executed in the recorded work → supported by a result artifact`. A source-code path alone does not prove execution. Classify exact parameters by the comparison scope defined in the Progress workflow; do not relabel fixed-axis slices or local diagnostics as full sensitivity tests.
+- For experimental Progress claims, distinguish `planned protocol → performed procedure → QC-passed measurement → observed result → independent repetition or corroboration`. Do not infer controls, independence, execution, or validation from a plausible protocol or polished plot.
 - Use audience-readable descriptions, never internal folder or module names. Introduce each dataset before its result: what was sampled, what comparison it supports, and what it cannot answer.
 - Distinguish **established / source-supported / inference / proposal** in planning. Do not expose these audit labels on slides unless they help the audience.
 
@@ -35,7 +37,7 @@ Read [references/scientific-content-contract.md](references/scientific-content-c
 ## Shared Scientific Rules
 
 - Give each slide one scientific job and one defensible conclusion. The title should communicate the question or conclusion, not merely name a dataset, file, module, or figure number.
-- Put the analysis unit on the slide when it affects interpretation: cell, embryo, biopsy, patient, event, feature, replicate, software release, etc.
+- Put the analysis or experimental unit on the slide when it affects interpretation. When observations are nested, state what `n` counts rather than using cells, fields, wells, or repeated measurements as implicit independent units.
 - Match every conclusion to the displayed evidence. Correlation is not causality; gene-level change is not pathway proof; an uncorrected trend is not a validated result.
 - Do not force weakly annotated measurements into a biological identity to make a cleaner story. If a result is not integrated into the current workflow, show it as a standalone result and break the pipeline connection visually.
 - Expand each abbreviation at first audience-facing use with a Chinese explanation or English full name. Use Arabic numerals for quantities in slides and notes.
@@ -88,6 +90,7 @@ After generation, inspect the source render, then re-inspect every page rendered
 - notes explain question, production/readout, result, boundary, and transition where relevant;
 - slides, notes, screenshots, and source manifests agree on numbers, analysis units, terminology, evidence identity, and software version; removed or replaced claims, visuals, terms, and versions do not survive in any of them;
 - parameter wording agrees with its recorded provenance and comparison scope; a current numerical example is not presented as a transferable constant;
+- each Progress workstream has the correct evidence profile; hybrid claims preserve both stage-level chains, while experimental claims keep units and `n`, performed execution, run validity, and repetition/corroboration distinct;
 - no section silently expands beyond its frozen scope;
 - no generic summary or next-step page appears only for symmetry. End with completed outputs, critical synthesis, or an evidence-gated decision appropriate to the routed workflow.
 

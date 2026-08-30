@@ -15,6 +15,7 @@ For each workstream record:
 | Field | Required content |
 |---|---|
 | Workstream | Audience-readable name, not folder/module name |
+| Evidence profile | computational / experimental / hybrid / general, plus one-sentence dependency rationale |
 | Audience priority | primary / secondary / backup, plus the one takeaway the audience must retain |
 | Starting premise | The observation, prior result, operational friction, or preset hypothesis that started the workstream |
 | Scientific/operational question | What this workstream is trying to establish or remove |
@@ -22,7 +23,7 @@ For each workstream record:
 | Since last report | What materially changed |
 | Strongest completed result | The most decision-relevant result already supported by the work |
 | Displayed evidence | The figure, table, or screenshot that most directly supports that result |
-| Analysis unit | cell / patient / event / project / software release etc. |
+| Analysis / experimental unit | The independent level that supports the stated inference |
 | Boundary | What the result does not establish |
 | Status | completed / ongoing / blocked / validation needed |
 | PI decision needed | include only when a real decision exists; otherwise omit |
@@ -36,68 +37,30 @@ Complete `Starting premise`, `Authoritative source order`, `Strongest completed 
 - Do not select the most visually convenient figure and then reverse-engineer the workstream conclusion from it. The displayed evidence must answer the actual workstream question.
 - Lead with the strongest defensible achievement. Keep a necessary limitation close to the result, but do not let a catalogue of caveats obscure what was completed.
 - Assign `primary / secondary / backup` before storyboarding. Give explanation depth to the user's priorities; do not let adjacent completed work consume equal space merely because it exists.
+- Treat an old deck as a style/teaching reference unless its scientific claims are reverified against current sources.
 
-## Computational method and parameter lock
+## Workstream evidence-profile router
 
-Use this section of `progress_map.md` when a workstream teaches an analysis pipeline, algorithm, data-processing method, or scientific software behavior. Keep it conditional; ordinary result updates do not need it.
+After inspecting the current sources and before detailed storyboarding, classify every Progress workstream. The user does not need to choose a route.
 
-### Process execution ledger
+| Profile | Dependency test | Conditional reference |
+|---|---|---|
+| `computational` | The claim depends on code, data transformation, an algorithm, a model, a parameterized analysis, or a software state. | Read [progress-computational-evidence.md](../references/progress-computational-evidence.md). |
+| `experimental` | The claim depends on physical manipulation, preparation, treatment, acquisition, or measurement of a biological, chemical, or material system. | Read [progress-wet-lab-evidence.md](../references/progress-wet-lab-evidence.md). |
+| `hybrid` | The same claim requires both experimental generation/acquisition and computational processing/analysis to be correct. | Read both references and assign a profile to each stage. |
+| `general` | The update is status, coordination, or another completed output whose claim needs neither method-specific evidence lock. | Use only the common truth lock. |
 
-For every process that may appear in the deck, record:
+Use claim dependency, not keywords or scientific subject matter:
 
-| Field | Required content |
-|---|---|
-| Audience object | What enters this stage, in audience-readable language |
-| Implemented operation | What the inspected source or contract implements |
-| Execution evidence | Run command, run record, configuration/hash, log, or other evidence that this exact work executed the operation |
-| Result artifact | The output that demonstrates the operation's observed result |
-| Allowed claim | The strongest wording jointly supported by implementation, execution, and result |
-| Excluded claim | A plausible overstatement that the evidence does not support |
+1. Would the claim fail if the inspected code, run record, version, or computational decision were wrong? If yes, enable the computational profile.
+2. Would the claim fail if sample identity, physical execution, controls, independence, measurement validity, or experimental QC were wrong? If yes, enable the experimental profile.
+3. If both answers are yes for one claim, use `hybrid` and preserve the handoff between the stages.
 
-Code presence, recorded execution, and result evidence are three different facts. A method found only in source is `implementation-only`; do not describe it as part of the completed run. If current source differs from the executed snapshot, state which behavior is established by the run artifacts and which is only current implementation. Do not import a stage merely because it appears in an older deck.
+A biological matrix analyzed from a frozen input can be purely computational. A high-throughput workstream that prepares specimens, acquires data, and runs a custom pipeline is usually hybrid. A software interface is computational unless the claim also concerns physical assay performance. A mixed deck has no single global profile: route each workstream, and route each stage of a hybrid workstream.
 
-Treat a reference deck as two separate sources: it may govern visual identity, teaching depth, or useful explanatory patterns, but its scientific content is subordinate to current contracts, run records, and results.
+Routine instrument acquisition, file export, or standard plotting does not by itself make a wet-lab workstream hybrid. Enable the computational lock only when a processing/version/parameter decision materially supports the conclusion or is itself part of the reported progress.
 
-### Parameter evidence ledger
-
-Record each exact parameter or decision rule that matters to the audience as:
-
-`role → value/formula → source → alternatives actually executed → affected scope → evidence class → wording boundary`
-
-Use the narrowest applicable evidence class; use more than one only when they describe different scopes and keep those scopes explicit:
-
-- **data-derived** — estimated from current data through a fixed formula; the formula's multiplier may still be untested;
-- **full rerun comparison** — alternatives reran every downstream stage that the parameter can affect;
-- **local endpoint comparison** — alternatives changed only a local diagnostic such as recall, not the final axis or model;
-- **fixed-axis slice** — thresholds were applied to one already frozen axis or assignment;
-- **perturbation stability** — the fixed method was challenged by a grid shift, deletion, resampling, or similar perturbation;
-- **diagnostic/nonbinding** — computed or checked but not used to make the current decision, or far from its stopping limit;
-- **untested frozen constant** — one value was executed with no direct alternative comparison.
-
-Never collapse these classes into the generic word “sensitivity.” In particular, a fixed-axis slice is not a full pipeline sensitivity test, and deleting data from a frozen result is not the same as refitting without those data. Use “optimized,” “blind-selected,” “preregistered,” “validated,” or “generalizable” only when the source and comparison scope support that exact word.
-
-Separate three layers whenever transfer is discussed:
-
-1. the reusable algorithmic rule or invariant;
-2. the dataset-specific quantity that must be re-estimated;
-3. the current dataset's numerical instance or example.
-
-An illustrative candidate or current feature count may teach the method, but it must not become the rationale for the method or a target used to tune parameters.
-
-## Method teaching ladder
-
-Before allocating slides to a primary method-heavy workstream, list its prerequisite concepts in dependency order:
-
-`data object and analysis unit → stage input → operation and intuition → formula or decision rule when needed → stage output → next-stage dependency → execution evidence → boundary`
-
-Use one audience-level conceptual jump per slide. A simple result may need one slide; a multi-stage method may need several. Do not impose a 1–2 slide cap when that would skip a prerequisite, introduce a parameter before its role, or jump from one intermediate representation to a later decision.
-
-- Introduce what is counted, compared, shifted, grouped, or assigned before presenting its statistic.
-- State the unit and construction of folds, groups, windows, or held-out sets; do not replace their design with a convenient but inaccurate label such as “two halves.”
-- For a non-intuitive chart, define both axes, the statistic, the analysis unit, and the reading direction.
-- Introduce a general rule before a current numerical example. Label current values as current instances, not universal constants.
-- Put a main-deck formula only where it advances the stage logic. Define every symbol on the slide, give one plain-language purpose, and explain selection order in prose before a compact optimization expression. Move full derivations and dense parameter inventories to backup.
-- If a term does not let a first-time listener identify the object, operation, and decision, rewrite it in ordinary Chinese or define it before using the short form. Internal names and untranslated English are not substitutes for explanation.
+If sources are incomplete, mark the profile or stage `provisional`, inspect the available protocols, records, raw artifacts, code, logs, and results, and retain any unresolved dependency as a boundary. Ask the user only when the unresolved route would materially change the claim or required evidence and cannot be determined from the supplied workspace.
 
 ## Narrative grammar
 
@@ -142,19 +105,11 @@ End with **completed, verifiable outputs**. Add blockers, decisions, or next act
 
 Each slide entry in `scientific_handoff.md` must contain:
 
+- evidence profile and, for a hybrid workstream, the profile of the current stage;
 - audience priority and required takeaway;
 - starting premise and authoritative source priority when needed to interpret the result;
-- slide job;
-- single result/conclusion;
-- displayed evidence;
-- analysis unit;
-- conclusion boundary;
-- status if relevant;
-- software release snapshot when relevant;
-- method-stage input, operation, and output when relevant;
-- execution evidence and result artifact for a claimed completed process when relevant;
-- parameter evidence class and wording boundary for an exact decision value when relevant;
-- reusable rule versus current-instance example when transfer or generalization is discussed;
-- speaker-note job.
+- slide job, single conclusion, displayed evidence, supporting unit, boundary, status, and speaker-note job;
+- only the decision-bearing fields required by the selected computational or experimental reference;
+- software release snapshot when relevant.
 
 Before handoff, run an audience-language pass on the slide roster: expand abbreviations at first use, keep quantities in Arabic numerals, replace internal labels with audience-readable terms, and ensure no title depends on an unexplained method name or metric.
