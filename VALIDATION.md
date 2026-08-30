@@ -84,3 +84,20 @@ The later Idea/QA refinement was also treated as a narrow maintenance update and
 | Source rendering and final export differ | Final sign-off uses pages rendered from the delivered PPTX or PDF and rechecks formula typography and layout. |
 
 The maintenance patch passed the skill structural validator, Markdown-reference check, diff whitespace check, and a project-specific-term sweep. It added no new planning artifact, did not enlarge the 13-item Design Freeze, and made conditional checks explicit rather than mandatory on every slide.
+
+## Targeted Progress Method-Evidence And Teaching Audit
+
+The later Progress refinement was derived from a method-heavy scientific progress deck that required multiple rounds of source, terminology, formula, notes, and layout correction. Project-specific details were not copied into the skill. The update instead preserves these generic failure classes:
+
+| Scenario class | Required invariant |
+|---|---|
+| A method exists in source but may not have run | Implementation, recorded execution, and result evidence are separate; only their intersection supports a completed-process claim. |
+| Several threshold values are shown on one frozen axis | A fixed-axis slice is not called a full pipeline sensitivity test. |
+| A local recall or deletion check is available | Local diagnostics, perturbation stability, refitting, and end-to-end reruns keep distinct labels. |
+| A reusable method produces one dataset-specific number | The transferable rule, re-estimated quantity, and current numerical instance are taught separately. |
+| A complex method is compressed to fit a nominal page budget | Conceptual dependencies determine slide count; one missing prerequisite is not traded for brevity. |
+| An old deck is visually useful but scientifically stale | Style/teaching references are separated from current claim-bearing evidence. |
+| A group, fold, axis, statistic, or formula is non-intuitive | Construction, analysis unit, symbols, axes, and reading direction are defined before the conclusion. |
+| A final source render looks correct | The delivered PPTX/PDF is re-rendered and checked for overflow, stale notes, and missing mathematical glyphs. |
+
+This maintenance update introduces no new mandatory planning artifact. The execution and parameter ledgers remain conditional sections of `progress_map.md`, and their relevant fields flow into the existing canonical `scientific_handoff.md`. The patch passed the structural validator, Markdown-reference check, diff whitespace check, project-specific-term sweep, and a targeted invariant check for execution evidence, parameter scope, method expansion, transfer wording, typography, and delivery hygiene. It should receive a new independent A/B score only in a future full validation cycle rather than inheriting a score from the motivating deck.

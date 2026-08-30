@@ -15,11 +15,16 @@ Explain, when relevant:
 
 Do not repeat the title, narrate page layout, expose internal filenames/folder names, or spell quantities with Chinese numeral words. Define abbreviations at first audience-facing use. If a visual is conceptual or demo data, say so explicitly.
 
+Use audience-readable Chinese for the scientific object and operation. An internal term, acronym, or English label may follow after the meaning is clear, but must not carry the explanation by itself. When a fold, subset, window, or held-out group matters, state how it was constructed rather than replacing it with a looser analogy.
+
 After the visible slide is final, run a bidirectional consistency check:
 
 - every claim-bearing figure, table, screenshot, schematic, and formula on the slide is explained in the notes;
 - every page-specific visual, number, version, label, or position mentioned in the notes still exists on the current slide;
 - quantities, analysis units, thresholds, evidence status, terminology, and software versions agree across slide, notes, and source manifest.
+- every exact parameter is described with the same role, derivation, comparison scope, and evidence class as the scientific handoff;
+- no note upgrades a local diagnostic, fixed-axis slice, or deletion stress into a full rerun or refit;
+- every formula symbol, chart axis, and non-intuitive statistic shown on the slide has a readable explanation, and no explanation survives for a removed symbol or panel.
 
 Remove stale narration instead of preserving explanations for deleted or replaced content.
 
@@ -30,6 +35,12 @@ Use:
 `starting premise / question → what materially changed → evidence/readout → result → boundary → status/decision`
 
 For independent workstreams, provide a clean transition without inventing a scientific causal link. For software, explain the user task, the friction removed, what the shown screen state demonstrates, and how work is saved or handed off.
+
+For a computational-method slide, use the relevant subset of:
+
+`input object and analysis unit → operation → why the operation is needed → how to read the schematic/formula → output passed onward → evidence that this run executed it → parameter basis and comparison scope → boundary`
+
+Do not narrate every implementation detail. Explain the details needed to understand the stage dependency, the displayed result, and whether a parameter was derived, compared end to end, sliced on a fixed axis, or only checked diagnostically.
 
 ## Journal Club
 

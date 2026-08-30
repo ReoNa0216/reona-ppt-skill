@@ -7,6 +7,7 @@ A Codex skill for PI-facing scientific presentations in a fixed Tsinghua-purple 
 - Section-level routing for **Progress Update**, **Journal Club**, **Idea Discussion**, and mixed lab-meeting decks.
 - A mandatory Scientific Planning Gate before visual production.
 - Progress workstream truth locks for starting premise, source priority, strongest completed result, and displayed evidence.
+- Computational Progress ledgers that separate implementation, recorded execution, result evidence, and parameter-comparison scope.
 - Software release snapshots and bidirectional slide–notes–manifest consistency checks.
 - Source-verified claims tied to displayed evidence, analysis units, boundaries, and evidence status.
 - Separate handling of scientific evidence, software UI, explanatory schematics, and formulas.
@@ -30,7 +31,7 @@ SVG / PPTX / PDF / speaker notes
 
 ## Workflows
 
-- `workflows/progress-update.md`: workstream truth locks, optional external-validation grammar, strongest completed evidence, completion status, and software release-aware user flows.
+- `workflows/progress-update.md`: workstream truth locks, audience-priority routing, method teaching ladders, execution/parameter evidence ledgers, optional external-validation grammar, and software release-aware user flows.
 - `workflows/journal-club.md`: paper map, Figure evidence chain, teaching logic, and conclusion boundaries; Deep-read mode adds an `understanding_map.md` from a ChatGPT dialogue/notes file.
 - `workflows/idea-discussion.md`: interactive planning-only by default (evidence-first interview + Design Freeze approval), scope freeze, evidence status, falsification, phase gates, and model/formula roles.
 
