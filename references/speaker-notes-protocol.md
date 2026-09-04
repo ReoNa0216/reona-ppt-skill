@@ -63,4 +63,6 @@ Use:
 
 `problem/claim → why this step is necessary → what is evidence versus proposal → schematic/formula meaning → assumptions → validation/falsification → boundary or phase gate`
 
+For each claim-bearing panel, connect it to the deck's main question as `panel role → visible cue → supported inference → consequence for the proposed analysis or experiment → boundary`. Do not narrate screen position as scientific meaning; name the score, coordinate, comparison, or dynamic analysis that supplies the evidence.
+
 Explain the biological role of a main-deck formula before mathematical detail. When a costly modality or complex method is central to the proposal, explain which simpler alternative it must outperform and how failure would narrow the claim. State when a proposed capability depends on data or evidence not yet available.

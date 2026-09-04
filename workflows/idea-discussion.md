@@ -73,6 +73,10 @@ Allowed status values:
 
 Never present an inference or proposal as established fact.
 
+## Validity–novelty gate
+
+When a new modality, resolution, or analysis reproduces an established result, treat that concordance as a validity anchor, not the novelty claim. Before slide planning, name the additional information unavailable to the established approach and identify the evidence or analysis that reveals it. If no such increment is supported, narrow the contribution instead of presenting replication as discovery.
+
 ## Narrative grammar
 
 Default argument chain:
@@ -82,6 +86,8 @@ Default argument chain:
 The deck should feel like an argument, not a list of technologies.
 
 Before introducing a named method, teach the audience what the data object is, what scientifically relevant information a simpler summary loses, and what representation or model must preserve. Then present candidate methods and selection criteria. Do not make the audience learn an external model before they can understand the scientific job it is meant to perform.
+
+Planning questions are reasoning aids, not a fixed slide template. Split at scientific decision boundaries: when one page would require the audience to interpret an observation, use it to choose an intervention or design, and then read a different validation output, separate the observation/localization from the decision/intervention/readout.
 
 ## Model and formula slides
 

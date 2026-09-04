@@ -68,7 +68,7 @@ Keep this identity unless the user explicitly overrides it:
 ## Figure And Layout Guardrails
 
 - Never place a badge, caption, or added label over a scientific figure or software screenshot. Put interpretation outside the image frame.
-- Keep source figures and screenshots uncropped unless the user explicitly approves a crop. Do not duplicate a title already visible inside a source figure unless the external caption adds interpretation.
+- Crop a source figure only to isolate a claim-bearing panel. Start from the highest-resolution authoritative source and retain the axes, legends, group labels, and annotations needed to interpret that panel; exclude neighboring panels and slide chrome. Do not crop merely to fill a frame or recrop a low-resolution screenshot when the original is available.
 - Check every metric and annotation against its container. No text may cross a divider, card edge, figure frame, or page edge.
 - Give non-intuitive charts readable axis labels and enough room to explain the statistic. Give complex equations dedicated width or split the explanation; never solve overflow by shrinking symbols until they are unreadable.
 - Prefer fewer legible panels over a comprehensive but unreadable collage. Evidence must remain readable at presentation scale.

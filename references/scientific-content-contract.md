@@ -40,6 +40,8 @@ Archetype-specific artifacts are planning worksheets; `scientific_handoff.md` is
 - Single conclusion:
 - Starting premise and source priority, for Progress when needed:
 - Context required:
+- Representation/inference lock, for a new analysis: input object / coordinate semantics / transformation or output / allowed inference / forbidden inference:
+- Evidence reading contract, for claim-bearing panels: scientific question / exact panel role / visible cue / supported inference / forbidden inference:
 - Evidence / asset IDs:
 - Computational lock, when relevant — stage input/operation/output; implementation/execution/result; parameter scope; transferable rule/current instance:
 - Experimental lock, when relevant — contrast/controls; units and exact n; performed execution; measurement/QC; evidence maturity; choice provenance:
@@ -62,7 +64,11 @@ Archetype-specific artifacts are planning worksheets; `scientific_handoff.md` is
 
 The handoff is authoritative for scientific content. `ppt-master` may improve layout and visual hierarchy, but it must not strengthen claims, change analysis units, merge evidence with proposals, or substitute a different source panel without re-auditing the claim registry.
 
-The two conditional Idea fields above are not required on every slide. Use them only where they change the scientific decision; do not create extra planning artifacts or repeat the same contract page by page.
+The conditional lock and contract fields above are not required on every slide. Use them only where ambiguity would change the scientific interpretation or decision; do not create extra planning artifacts or repeat the same contract page by page.
+
+Use the representation/inference lock whenever terms such as distribution, state, module, alignment, or trajectory could be ambiguous. Instantiate the term for the actual data object; if it has no operational definition, remove it. A summary curve or score supports only the quantity it computes, not an unmeasured population change or mechanism.
+
+For each evidence panel, record one panel role and the visible cue that supports the claim. Direction, causality, stage localization, or biological identity requires evidence produced for that purpose; a panel's position or visual arrangement does not supply it.
 
 For a Progress workstream, preserve the `progress_map.md` truth lock in the handoff: starting premise, authoritative source order, strongest completed result, displayed evidence, analysis unit, and boundary. If later source review changes any of these, update the map and claim registry before changing the slide story.
 
