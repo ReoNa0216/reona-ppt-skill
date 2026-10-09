@@ -1,5 +1,5 @@
 interface:
   display_name: "ReoNa PPT Skill"
-  short_description: "Plan source-verified scientific decks before visual production"
+  short_description: "Discuss, build, and refine evidence-led scientific decks"
   brand_color: "#5B2C83"
-  default_prompt: "Use $reona-ppt-skill to route this scientific deck as progress update, journal club, idea discussion, or a mixed deck; complete the scientific planning gate before handing it to ppt-master."
+  default_prompt: "Use $reona-ppt-skill to develop or revise this scientific deck: route its sections, verify the evidence, carry accepted decisions forward, and complete the requested discussion or production using the reference style and available pipeline."

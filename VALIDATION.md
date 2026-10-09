@@ -49,14 +49,14 @@ The v2 skill was accepted because:
 - the only Journal weakness was corrected and re-tested;
 - the final skill passed structural validation and contains no project-specific scientific example.
 
-## Post-v2 Additions (unvalidated)
+## Post-v2 Additions (historical; unvalidated by A/B)
 
 After the v2 release above, two features were added and have not yet gone through the same A/B evaluation:
 
 - **Journal Club Deep-read mode** — `understanding_map.md` derived from a ChatGPT dialogue/notes file, with a paper/dialogue source hierarchy.
 - **Idea Discussion interactive planning-only gate** — evidence-first interview, `USER_REVIEW` hard stop, and Design Freeze approval before production.
 
-These are documented in their workflows but carry no validation score yet.
+These additions carried no new validation score. The later iterative Idea maintenance update below replaces the approval hard stop with authorization-aware discussion and revision.
 
 ## Targeted Progress Maintenance Audit
 
@@ -111,3 +111,11 @@ Before the final workflow edits, 10 synthetic cases and 10 failure mutations wer
 A post-hoc false-positive challenge also confirmed that routine instrument acquisition, export, and standard plotting do not automatically turn a simple wet-lab workstream into `hybrid`; a claim-bearing computational decision is required.
 
 This result establishes rule coverage and internal coherence, not real-world effectiveness or independent generalization. No new mandatory planning artifact was added: the router uses two dependency questions, the computational and experimental references load conditionally, and both feed the existing `progress_map.md` and `scientific_handoff.md`. The first real wet-lab deck should be treated as a held-out validation and may justify a narrow follow-up correction.
+
+## Iterative Idea Discussion Maintenance — 2026-10-09
+
+This update distilled general lessons from an exploratory scientific deck and its execution-focused derivative. Those decks were produced without invoking this skill; they supplied examples for improvement, not a test of skill effectiveness. No project-specific scientific content or private artifacts were added to the repository.
+
+The update preserves source verification, simpler alternatives, novelty beyond replication, and explicit validation. It replaces the one-way approval gate with a current design that can be revised within the user's authorization, makes reference style and existing production sources reusable, and removes mandatory defensive narration. Specialized validation guidance is loaded only when relevant.
+
+[Ten generic scenarios](validation/idea-iteration-cases.md) received a same-agent desk review of routing and design decisions. The record includes the decisions reached; it is not an independent forward test or a rendered-deck evaluation. Structural validation, relative Markdown links, metadata, and Git whitespace checks also passed. Existing Progress evidence references and its workflow remain unchanged.

@@ -1,6 +1,6 @@
 # Speaker Notes Protocol
 
-Write page-matched notes in formal, natural language. A typical content slide needs about `250–400` Chinese characters; use less for transitions and more only when a complex figure genuinely requires it.
+Write page-matched notes in natural, precise language. Match depth to the teaching job: a transition may need only a sentence; an unfamiliar experiment or model may need a fuller explanation. Inherit an accepted reference deck's note structure when requested. Length is a consequence of useful explanation, not a fixed quota.
 
 ## Shared Requirements
 
@@ -10,10 +10,14 @@ Explain, when relevant:
 2. how the displayed figure, result, screenshot, schematic, or formula was produced;
 3. how to read axes, colors, groups, panels, thresholds, states, or interface interactions;
 4. the key result or workflow benefit;
-5. the supported conclusion and its boundary;
+5. the supported conclusion, with any qualification that changes its interpretation;
 6. why the next slide follows.
 
-Do not repeat the title, narrate page layout, expose internal filenames/folder names, or spell quantities with Chinese numeral words. Define abbreviations at first audience-facing use. If a visual is conceptual or demo data, say so explicitly.
+Do not repeat the title, narrate page layout, or spell quantities with Chinese numeral words. At first relevant use, explain unfamiliar abbreviations, material or cell identities, treatments, intervention targets, and comparison groups before interpreting their results. If a visual is conceptual or demo data, identify that role clearly.
+
+Keep the visible slide focused on the main question and conclusion. Use notes to teach the experiment, figure, or calculation. Keep citations, exact panel locators, source paths, and asset provenance in a compact source block or manifest, separate from the spoken explanation. Add supporting context only when it helps explain the current page, and identify it as context rather than a displayed panel.
+
+Write affirmative explanations of what is studied, measured, inferred, or proposed. Retain uncertainty at the point where it affects a claim or decision; remove repeated caveats, defensive comparisons, obsolete debate history, and statements about unrelated capabilities. There is no mandatory limitation paragraph. If a sentence only explains what the page is not doing, replace it with the actual operation or delete it unless the distinction is essential.
 
 Use audience-readable Chinese for the scientific object and operation. An internal term, acronym, or English label may follow after the meaning is clear, but must not carry the explanation by itself. When a fold, subset, window, or held-out group matters, state how it was constructed rather than replacing it with a looser analogy.
 
@@ -33,19 +37,19 @@ Remove stale narration instead of preserving explanations for deleted or replace
 
 Use:
 
-`starting premise / question → what materially changed → evidence/readout → result → boundary → status/decision`
+`starting premise / question → what materially changed → evidence/readout → result → status/decision`
 
 For independent workstreams, provide a clean transition without inventing a scientific causal link. For software, explain the user task, the friction removed, what the shown screen state demonstrates, and how work is saved or handed off.
 
 For a computational-method slide, use the relevant subset of:
 
-`input object and analysis unit → operation → why the operation is needed → how to read the schematic/formula → output passed onward → evidence that this run executed it → parameter basis and comparison scope → boundary`
+`input object and analysis unit → operation → why it is needed → how to read the schematic/formula → output passed onward → evidence that this run executed it → parameter basis and comparison scope`
 
 Do not narrate every implementation detail. Explain the details needed to understand the stage dependency, the displayed result, and whether a parameter was derived, compared end to end, sliced on a fixed axis, or only checked diagnostically.
 
 For an experimental slide, use the relevant subset of:
 
-`contrast and controls → independent unit and n → what was actually performed → readout and QC → result → repeat/corroboration status → boundary`
+`contrast and controls → independent unit and n → what was actually performed → readout and QC → result → repeat/corroboration status`
 
 Explain only the design facts needed to interpret the evidence. For a hybrid workstream, make the handoff from specimen generation or acquisition to computational processing explicit and apply the appropriate note logic to each stage.
 
@@ -53,7 +57,7 @@ Explain only the design facts needed to interpret the evidence. For a hybrid wor
 
 Use:
 
-`question → experiment → how to read the figure → result → what it proves → what it does not prove → why the next experiment is needed`
+`question → experiment → how to read the figure → result → supported conclusion → why the next experiment follows`
 
 Figure-heavy slides may use longer notes. The notes should teach the audience how to interpret the selected evidence without forcing every panel onto the page.
 
@@ -61,8 +65,10 @@ Figure-heavy slides may use longer notes. The notes should teach the audience ho
 
 Use:
 
-`problem/claim → why this step is necessary → what is evidence versus proposal → schematic/formula meaning → assumptions → validation/falsification → boundary or phase gate`
+`question → evidence motivating the choice → proposed operation → schematic/formula meaning → validation → resulting decision`
 
-For each claim-bearing panel, connect it to the deck's main question as `panel role → visible cue → supported inference → consequence for the proposed analysis or experiment → boundary`. Do not narrate screen position as scientific meaning; name the score, coordinate, comparison, or dynamic analysis that supplies the evidence.
+For each claim-bearing panel, connect it to the deck's main question as `panel role → visible cue → supported inference → consequence for the proposed analysis or experiment`. Name the score, coordinate, comparison, or dynamic analysis that supplies the evidence; screen position alone supplies no scientific meaning.
 
 Explain the biological role of a main-deck formula before mathematical detail. When a costly modality or complex method is central to the proposal, explain which simpler alternative it must outperform and how failure would narrow the claim. State when a proposed capability depends on data or evidence not yet available.
+
+For an unfamiliar method, a short labeled numerical teaching example may explain inputs, intermediate operations, and output. Define the time coordinate and what remains fixed or changes when these affect interpretation. Keep this explanation tied to the current method and decision rather than adding a catalogue of unsupported applications.

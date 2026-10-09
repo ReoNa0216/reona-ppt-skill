@@ -1,115 +1,97 @@
 # Workflow: Idea Discussion
 
-Use for proposed projects, new scientific directions, modeling ideas, experiment design, grant-style internal discussion, or any deck where the core task is to decide whether an idea is scientifically coherent and executable.
+Use for proposed projects, scientific directions, modeling ideas, experiment design, or a deck whose purpose is to decide what is worth testing and how to test it.
 
-## Default behavior: interactive planning-only
+## Start from the user's current task
 
-A section routed to Idea Discussion is planning-only by default. Without an approved Design Freeze, do not hand off to `ppt-master`, do not generate the PPT, and do not write the final storyboard.
+- **Discuss first:** investigate the question, compare options, and present a design recommendation. If the user asks to discuss before making slides, stay in discussion until they authorize production.
+- **Create or revise:** a request to make the deck, proceed with a discussed plan, or revise named pages authorizes that work. Resolve routine choices from existing context; do not require an additional approval phrase or a separate Design Freeze ceremony.
+- **Continue an existing deck:** read its visible content, notes, sources, and relevant decision history. Carry accepted decisions forward. Ask again only when new evidence or the requested change materially reopens them.
 
-Planning follows this one-way flow:
+The Design Freeze is the current agreed design, not a permanent prohibition on change. Maintain it in the project's existing content source or in a concise design memo. Do not create duplicate files just to satisfy a template.
 
 ```text
-DISCOVERY → FREEZE_DRAFT → USER_REVIEW → APPROVED_FREEZE → handoff → ppt-master
+read evidence and prior decisions → identify the decision → compare feasible designs
+    → record the current design → produce when authorized → inspect and discuss
+                                    ↑                         ↓
+                                    └── revise affected decisions and pages ──┘
 ```
 
-`USER_REVIEW` is a **hard stop**: show the Freeze Draft summary, list frozen vs not-yet-frozen items, ask only high-leverage unresolved questions, then wait for approval. `USER_REVIEW → ppt-master` is never allowed.
+In mixed decks, route each section independently. An unresolved Idea section blocks only production that depends on the missing decision; continue authorized work on the other sections.
 
-### Two ways to skip the default
+## Read first, then ask
 
-**Case A — an approved freeze is already provided.** Recognize keywords such as `approved / final / frozen / 已确认 / 已冻结 / 可以按此制作`.
+Follow [the evidence-first interview](../references/evidence-first-interview.md). Read supplied material relevant to the decision, including methods and legends behind consequential claims. Recover accepted choices from existing notes or project records when earlier conversations are unavailable.
 
-**Case B — the user explicitly skips confirmation.** For example: *不要问我，直接按最佳判断制作。* Even then, generate the Design Freeze internally and treat it as auto-approved.
+Ask a small number of questions that change the scientific question, feasibility, comparison, or intended claim. Continue independent research and planning while answers are pending. When an answer is essential, hold only the dependent design choice. Record ordinary assumptions and proceed within the user's authorization.
 
-### Mixed-deck rule
+## What the design must explain
 
-In a mixed deck, deck-level production waits until **every** Idea section has an approved freeze. Other sections may finish their own planning; no final deck is produced while any Idea section is unapproved.
+Use these questions as reasoning aids, not a mandatory slide sequence or questionnaire:
 
-## DISCOVERY: evidence-first interview
+1. **Value:** what important question is unresolved, and what new information would answering it provide?
+2. **Evidence:** what is established, what follows by inference, and what remains a proposed test?
+3. **Feasibility:** what can be measured or manipulated with the available resources? Which unresolved resource changes the design?
+4. **Target:** what is the smallest independently valuable question, with a defined experimental/analysis unit, input, comparison, and output?
+5. **Necessity:** what is the strongest credible simpler or lower-cost alternative, and what information would the proposed approach add?
+6. **Test:** which experiment or held-out comparison would support, revise, or reject the hypothesis? What confounding would change that interpretation?
+7. **Decision:** what result determines the next action or a justified expansion of scope?
 
-Entering `DISCOVERY`, follow `references/evidence-first-interview.md`: **read first, then ask.**
+Preserve the user's declared source priority when reconciling existing design memos, storyboards, and asset lists. For a large new proposal, `design_freeze.md` and `claim_evidence_map.md` can hold this reasoning. For an existing project, update the equivalent fields in its current source. Use a separate open-question list only when unresolved decisions need tracking.
 
-- Read every user file and pre-fill what the material already supports.
-- Ask only 1–4 high-leverage questions per round.
-- With no decision-changing uncertainty, auto-enter `FREEZE_DRAFT`; do not keep probing.
+For each consequential claim, retain:
 
-## Audience question
+`claim → evidence status → source → displayed evidence → analysis unit → material qualification`
 
-> 这个问题值得做吗？我们到底要解释什么？现有证据与能力支持到哪里？方案如何被证伪？一期和长期愿景的边界在哪里？
+Use `established`, `source-supported`, `inference`, and `proposal` internally to select accurate wording. Add a discriminating test to central hypotheses. These fields do not all belong on the visible slide.
 
-## Planning artifact 1: `design_freeze_draft.md` → `design_freeze.md`
+## Make discussion change the design
 
-Produce `design_freeze_draft.md` in `FREEZE_DRAFT`; rename to `design_freeze.md` on approval. Thirteen items:
+Compare plausible alternatives before selecting one. Recommend a design and explain the evidence and resource tradeoff; do not turn every uncertainty into a question for the user.
 
-1. **Clinical/scientific problem** — one sentence.
-2. **Why current approaches are insufficient** — evidence-based gap, not marketing language; name the strongest credible simpler or lower-cost alternative.
-3. **Established evidence** — what is already supported experimentally (status: `established` / `source-supported`).
-4. **Inferences** — reasonable synthesis from evidence, not directly tested (status: `inference`).
-5. **Current platform capability** — what can actually be measured now.
-6. **Hard technical boundaries** — destructive sampling, annotation uncertainty, sample access, and, when relevant, confounding in an indirect readout plus an independent cross-check.
-7. **Phase I scientific question** — the smallest independently valuable question; freeze the analysis unit, input boundary, and experimental or prediction target before choosing a model.
-8. **Model/experimental hypothesis** — what mechanism or state transition is being learned/tested.
-9. **Explicit exclusions** — what Phase I will not claim.
-10. **Success criteria** — what would count as a meaningful positive result, including comparison with the simplest and strongest credible alternative when a costly modality or complex model is proposed.
-11. **Falsification / failure criteria** — what result would invalidate the proposed approach; failure to outperform the credible alternative limits the necessity claim even when the new modality is informative.
-12. **Phase II gate** — what new data/evidence is required before expanding scope; if generalization or transfer is proposed, define the held-out unit, grouping rule, allowed calibration, and claim boundary.
-13. **Open questions** — remaining high-leverage questions (also written to `open_questions.md`).
+When several novel components are proposed together, identify which are essential to the central question and which require preliminary evidence. Link each decisive preliminary result to a scope choice. A simpler design should still answer a worthwhile question; retain a combined design when its interaction is the actual question and can be tested with the available resources.
 
-Do not begin slide planning until the user-provided authoritative design memo, storyboard, and asset list have been reconciled when such materials exist. Preserve their declared priority order.
+Read [validation design](../references/idea-validation-design.md) when the proposal involves pilot-based scope selection, prediction, transfer, or model-derived intervention candidates. Apply only the relevant sections.
 
-## Planning artifact 2: `claim_evidence_map_draft.md` → `claim_evidence_map.md`
+Reproducing an established result provides a validity anchor. Establish the additional information supplied by the new measurement or analysis before claiming novelty. If the increment is unresolved, make it the question to test.
 
-Produce the draft in `FREEZE_DRAFT`; rename on approval.
+## Build the argument for this meeting
 
-For every major claim:
+A useful chain is:
 
-`claim → status → source → displayed evidence → analysis unit → boundary → falsifier`
+`important problem → what evidence has established → remaining question → proposed measurement/design → analysis or model → decisive validation → decision`
 
-Allowed status values:
+Introduce the data object and the information the method must preserve before teaching a named method. Organize literature by the role each result plays in this argument, rather than giving every paper equal space.
 
-- **established** — directly supported by the user's prior work or strong primary evidence;
-- **source-supported** — supported by external primary literature;
-- **inference** — reasonable synthesis from evidence but not directly tested;
-- **proposal** — future design/claim to be tested.
+Adapt the deck to its job. An exploratory deck may compare competing explanations and teach the evidence in depth. An execution deck should foreground comparisons, operations, readouts, dependencies, and decision rules. Derive the execution deck from accepted decisions rather than mechanically shortening the exploratory deck.
 
-Never present an inference or proposal as established fact.
+Give each page one scientific job. Split when the audience must first interpret evidence, then choose a design, then understand a different validation output. Respect the requested page budget by selecting evidence and moving teaching detail to notes; propose a scope adjustment if essential reasoning cannot fit legibly.
 
-## Validity–novelty gate
+## Explain methods at the level needed for a decision
 
-When a new modality, resolution, or analysis reproduces an established result, treat that concordance as a validity anchor, not the novelty claim. Before slide planning, name the additional information unavailable to the established approach and identify the evidence or analysis that reveals it. If no such increment is supported, narrow the contribution instead of presenting replication as discovery.
+- State the input, operation, output, and scientific purpose. Pair a main-deck formula with its plain-language meaning and define its symbols.
+- Distinguish existing demonstrated capability from a proposed extension. Assess an extension through its assumptions, required data, and validation plan; missing implementation alone does not invalidate a coherent proposal.
+- Define held-out units, grouping, and allowed calibration for generalization or transfer. Match evaluation to the output actually produced by the model.
+- Compare unresolved method choices by scientific information preserved, stability, validation performance, and interpretability. Mathematical complexity is not itself a contribution.
+- Use a short, clearly labeled teaching example when it makes a method understandable. Keep derivations and full objectives in notes or requested backup material.
 
-## Narrative grammar
+## Treat visual feedback as scientific feedback
 
-Default argument chain:
+Before drawing a schematic, specify what each object and arrow means: a group, stage, measurement, operation, relationship, or prediction. Distinguish separate comparisons from successive stages. Keep colors and symbols stable across pages.
 
-`clinical/scientific problem → biological anchor → unresolved dynamic/mechanistic gap → why current measurement is insufficient → what the platform can observe → mathematical/experimental problem definition → modeling principle → validation plan → claim boundary → phased roadmap`
+Use original figures for evidence and redraws or image generation for explanatory schematics. Show hypotheses as hypotheses; conceptual trajectories and state diagrams are allowed when their illustrative role is clear.
 
-The deck should feel like an argument, not a list of technologies.
+When feedback exposes an ambiguous figure, unsupported transition, or mismatched metric, repair the design or explanation first. Then update the affected slide, notes, figure, and source record together. Do not substitute a defensive paragraph for that repair.
 
-Before introducing a named method, teach the audience what the data object is, what scientifically relevant information a simpler summary loses, and what representation or model must preserve. Then present candidate methods and selection criteria. Do not make the audience learn an external model before they can understand the scientific job it is meant to perform.
+## Iterate and deliver
 
-Planning questions are reasoning aids, not a fixed slide template. Split at scientific decision boundaries: when one page would require the audience to interpret an observation, use it to choose an intervention or design, and then read a different validation output, separate the observation/localization from the decision/intervention/readout.
+For each feedback round:
 
-## Model and formula slides
+1. Identify the changed decision and its dependencies.
+2. Preserve accepted content and visual conventions outside that change.
+3. Revise the canonical source, then regenerate or edit the affected pages.
+4. Check the exported pages, notes, and cross-page consistency. Verify protected reference files remain unchanged when a derivative deck is requested.
 
-- A formula belongs in the main deck only if it clarifies the model's scientific role.
-- Pair every main formula with a plain-language biological interpretation.
-- Show model hierarchy and assumptions visually; move derivations and full objectives to backup slides.
-- Do not claim generalization unless the evidence supports it. Define what is held out and how it is grouped, distinguish within-domain generalization from cross-scenario transfer, and state whether the new setting requires calibration.
-- Do not turn a named model family, mathematical complexity, or "AI" label into the scientific contribution; the contribution must be the biological question it makes testable.
-- Do not preselect a named method as the winner when method choice is unresolved; compare plausible candidates by stability, held-out performance, interpretability, and the scientific information they preserve.
+Close with the decision the meeting needs: a recommended design, the next decisive experiment, a validation comparison, or a conditional roadmap when later stages matter. Do not add phases merely to complete a template.
 
-## Asset rule
-
-Classify every visual as:
-
-- **Evidence** — original paper/user data figure or verified software screenshot; never AI-generated.
-- **Explanatory schematic** — redraw or image generation allowed; must be labeled as conceptual when necessary.
-- **Formula/model** — render faithfully; no decorative pseudo-math.
-
-## Closing rule
-
-End with a **phased evidence-gated roadmap**, not a grand universal vision. Later stages should be explicitly conditional on Phase I success.
-
-## After approval
-
-Once `APPROVED_FREEZE`, produce `scientific_handoff.md` (per `references/scientific-content-contract.md`) and hand off to `ppt-master`. Visual review and export belong to `ppt-master`; the ReoNa-specific final checks are in the SKILL.md "Handoff And Final Review" section.
+Use [the scientific content contract](../references/scientific-content-contract.md) for the production handoff and the main skill's final review for export QA. Reuse a working project pipeline; otherwise use `ppt-master` for visual production.

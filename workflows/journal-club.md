@@ -51,7 +51,7 @@ For each main figure or selected panel:
 | Readout | what axes, colors, groups, scores, or panels mean |
 | Result | what changed or was observed |
 | Supported claim | the strongest defensible conclusion |
-| Does not prove | causal/clinical/generalization boundary |
+| Material qualification | causal/clinical/generalization scope when it changes interpretation |
 | Method worth learning | only if method matters for the user's learning goal |
 | Link to next figure | why the next experiment is needed |
 
@@ -94,7 +94,7 @@ Preserve the source's statistical notation and denominator for every quoted metr
 
 A good figure slide answers, in order:
 
-`What is the question? → How did they test it? → How do I read this panel? → What is the result? → What does it prove / not prove?`
+`What is the question? → How did they test it? → How do I read this panel? → What is the result? → What conclusion follows?`
 
 Use the slide itself for the question, key result, and 1–3 visual guides. Put detailed panel-by-panel walkthrough in speaker notes so the page stays sparse.
 
@@ -106,7 +106,7 @@ For figure-heavy slides, notes may be longer than other deck types. Prefer this 
 2. describe the experiment and analysis unit;
 3. explain axes/colors/panels/thresholds needed to read the figure;
 4. state the result;
-5. state the conclusion boundary;
+5. state the supported conclusion and any qualification needed to interpret it;
 6. bridge to why the next figure is necessary.
 
 Avoid reciting every panel if it does not change the inference.

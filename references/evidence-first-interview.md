@@ -1,77 +1,26 @@
 # Evidence-first Interview
 
-Use for the **Idea Discussion** `DISCOVERY` state. Principle: **read first, then ask.**
+Use while developing or revising an Idea Discussion. Read first, then ask.
 
-## Principle
+## Recover what is already known
 
-Read first, then ask. Before asking anything:
+Read the supplied design, relevant source evidence, current deck and notes, and accepted decisions. Consult methods and legends behind consequential claims. Use project records when earlier dialogue is unavailable; do not make the user reconstruct decisions already recorded there.
 
-1. Read every user-provided file (papers, Methods, legends, existing design memo, storyboard, asset list).
-2. Pre-fill everything the material already supports (problem, evidence, capabilities, boundaries).
-3. Ask only questions that genuinely change a decision.
+Separate accepted choices, unresolved scientific questions, and missing practical resources. Pre-fill the design from this evidence before asking for information.
 
-### Never
+## Ask when the answer changes the work
 
-- Open with a 10–20 item template question list.
-- Re-ask what the files already state.
-- Ask low-value questions to fill a table.
-- Keep probing "for rigor" when there is no decision value (Rule 6).
+A useful question changes the central question, feasibility, experimental comparison, analysis unit, prediction target, validation, intended claim, or meeting decision.
 
-## High-leverage question
+Ask a small number together, usually 1–3. Explain the choice and its consequence in plain language; recommend an option when evidence supports one. Avoid a template interview, repeated confirmation, or questions whose answers only fill a table.
 
-Ask only when an uncertainty would change any of:
+For example, whether a model must predict a new condition can change the data split and experiment. The color of a diagram can usually be inferred from the accepted deck.
 
-- Phase I scientific question
-- experimental design
-- model architecture
-- claim boundary
-- success / failure criteria
-- roadmap phase gate
-- audience / meeting goal
+## Proceed according to the dependency
 
-Anything else is recorded as `future option / not required for Phase I`, not a blocker.
+- If the answer is essential, keep the dependent choice open and continue work that does not require it.
+- If the issue is a routine choice, use existing preferences and record a reasonable assumption.
+- If a scientific uncertainty needs experimental evidence, design the discriminating test and outcome-dependent next step rather than asking the user to guess the result.
+- If the user has authorized creation or revision, proceed within that scope. If the user asked for discussion before production, present the recommendation and wait for their direction to produce.
 
-## Examples
-
-### Ask
-
-> 一期只需解释已测条件，还是必须同时支持未见干预的泛化？
-
-Because it changes: intervention panel, model representation, benchmark.
-
-### Do not ask
-
-> 是否还要增加一项不影响一期结论的探索性实验？
-
-If the extra experiment is not required for Phase I to stand, record it as:
-
-```text
-future option / not required for Phase I
-```
-
-and do not block the freeze.
-
-## Questions per round
-
-Default **1–4** per round, highest-leverage only (Rule 5).
-
-## Exit condition
-
-When no decision-changing uncertainty remains, automatically enter `FREEZE_DRAFT`. Do not keep probing in `DISCOVERY`.
-
-## Self-check before asking
-
-A question is invalid if any of these hold:
-
-- the answer is derivable from material already read;
-- the answer changes none of the seven high-leverage items;
-- it is a template roster ("who is your audience?" unless genuinely missing and it affects claim boundary / meeting goal);
-- the round exceeds 4 questions (trim to the highest-leverage).
-
-## Relation to the planning flow
-
-```text
-DISCOVERY (read → pre-fill → 1–4 high-leverage questions per round)
-    ↓ no decision-changing uncertainty
-FREEZE_DRAFT
-```
+Once the important choices are sufficiently defined for the requested work, update the current design and continue. Further questions should resolve new decisions, not repeat a completed interview.

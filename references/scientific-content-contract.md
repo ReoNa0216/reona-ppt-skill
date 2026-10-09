@@ -1,17 +1,19 @@
 # Scientific Content Contract
 
-Use this contract after archetype-specific planning and before `ppt-master` visual planning.
+Use this contract to keep scientific planning and visual production consistent, including revisions through an existing project pipeline.
 
-## Required Planning Artifacts
+## Planning Records
 
 - Progress Update section: `progress_map.md`.
 - Journal Club section: `journal_map.md` (plus `understanding_map.md` when a dialogue/notes file is provided, i.e. Deep-read mode).
-- Idea Discussion section: `design_freeze_draft.md` → `design_freeze.md`, `claim_evidence_map_draft.md` → `claim_evidence_map.md`, and `open_questions.md`.
-- Every deck, including a mixed deck: one unified `scientific_handoff.md`.
+- Idea Discussion section: current design and claim–evidence map; unresolved decisions when relevant.
+- Every deck, including a mixed deck: one unified production source, conventionally `scientific_handoff.md`.
+
+These names describe information responsibilities, not a requirement to create parallel files. Existing structured slide content, project design records, or equivalent sections can satisfy them. For a local revision, update affected entries and their dependencies rather than recreating the entire planning packet.
 
 For a mixed deck, label each planning-artifact section clearly and merge its claims and slide roster into the single handoff. Do not invent a causal connection between independent sections.
 
-Archetype-specific artifacts are planning worksheets; `scientific_handoff.md` is the canonical production contract. Synthesize them by stable claim/figure/asset IDs instead of copying every paragraph into both places. If they disagree, stop and reconcile the planning artifact before handoff rather than maintaining two versions of the claim.
+Archetype-specific artifacts are planning worksheets; the designated production source is the canonical content contract. Synthesize by stable claim/figure/asset IDs instead of copying every paragraph. Reconcile disagreements before producing the affected content.
 
 ## `scientific_handoff.md` Schema
 
@@ -50,7 +52,7 @@ Archetype-specific artifacts are planning worksheets; `scientific_handoff.md` is
 - Decision contract, for Idea slides when relevant: analysis unit / input boundary / target / strongest credible alternative / pass-fail comparison / generalization or transfer definition:
 - Independent cross-check, when the main readout is indirect or plausibly confounded:
 - Claim IDs:
-- Boundary to show or note:
+- Material qualification to show or note, if it changes interpretation:
 - Speaker-note job:
 - Transition to next slide:
 
@@ -58,11 +60,11 @@ Archetype-specific artifacts are planning worksheets; `scientific_handoff.md` is
 | Asset ID | Type | Source/path | Page/panel or screen state | Direct/crop/redraw/imagegen | Claim supported | Notes |
 |---|---|---|---|---|---|---|
 
-## Do-not-claim list
-- ...
+## Internal audit concerns, when needed
+- Consequential unresolved issue / required check / affected claim:
 ```
 
-The handoff is authoritative for scientific content. `ppt-master` may improve layout and visual hierarchy, but it must not strengthen claims, change analysis units, merge evidence with proposals, or substitute a different source panel without re-auditing the claim registry.
+The handoff is authoritative for scientific content. Visual production may improve layout and hierarchy, but must not strengthen claims, change analysis units, merge evidence with proposals, or substitute a source panel without re-auditing the claim. Internal audit concerns guide revision; they are not boilerplate to paste into slides or notes.
 
 The conditional lock and contract fields above are not required on every slide. Use them only where ambiguity would change the scientific interpretation or decision; do not create extra planning artifacts or repeat the same contract page by page.
 
@@ -87,7 +89,9 @@ When an old deck is supplied as a reference, record whether each reused element 
 - `formula`: mathematical expression used in scientific reasoning.
 - `decorative`: minimal and never claim-bearing.
 
-For evidence, identify the exact source and page/panel or software state. For software evidence, also record the official repository reference, release/version, exact interface state, and whether the data are real or demonstrative. A crop is allowed only when approved and when it cannot alter interpretation. AI-generated explanatory assets must never resemble experimental data: do not fabricate axes, sample counts, error bars, microscopy, heatmaps, embeddings, or quantitative plots.
+For evidence, identify the exact source and page/panel or software state. For software evidence, also record the official repository reference, release/version, exact interface state, and whether the data are real or demonstrative. Crop from the authoritative original to isolate relevant evidence while retaining axes, legends, complete group labels, and annotations needed to interpret it. Routine cropping within an authorized edit needs no separate approval.
+
+Explanatory assets may contain conceptual state diagrams, trajectories, or labeled teaching values when their illustrative role is clear. Generate or redraw these as schematics; preserve quantitative evidence from its original source. Do not fabricate measurements, sample counts, statistical annotations, or realistic assay images that could be mistaken for results. Record prompts and inspect generated labels and arrows against the intended scientific meaning.
 
 For a non-intuitive chart, record the x-axis, y-axis, statistic, analysis unit, and intended reading. For a formula, record every symbol needed on the slide and one plain-language statement of what decision or transformation it performs. If those definitions cannot fit legibly, split the explanation or move the full expression to backup rather than shrinking it.
 
