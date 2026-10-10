@@ -11,7 +11,7 @@ A Codex skill for developing, discussing, creating, and revising PI-facing scien
 - Progress workstream truth locks for starting premise, source priority, strongest completed result, and displayed evidence.
 - Automatic Progress routing by claim dependency: computational, experimental, hybrid, or general.
 - Parallel evidence locks for computational execution/parameters and wet-lab design/execution/measurement, loaded only when relevant.
-- Conditional method-comparison guidance for worked explanations, meaningful schematics, performance scope, and output agreement.
+- Conditional Progress method teaching: audience prerequisites, complete examples, complementary schematics and notes, and evidence-matched comparisons.
 - Software release snapshots and bidirectional slide–notes–manifest consistency checks.
 - Source-verified claims tied to displayed evidence, analysis units, boundaries, and evidence status.
 - Separate handling of scientific evidence, software UI, explanatory schematics, and formulas.
@@ -39,7 +39,7 @@ requested deliverable + export review → discussion and focused revision
 - `workflows/progress-update.md`: workstream truth locks, automatic evidence-profile routing, audience-priority teaching depth, optional external-validation grammar, and software release-aware user flows.
   - `references/progress-computational-evidence.md`: execution, parameter-comparison scope, transfer, and computational teaching logic.
   - `references/progress-wet-lab-evidence.md`: units and `n`, controls, performed execution, measurement validity, evidence maturity, and experimental teaching logic.
-  - `references/progress-method-comparison.md`: earlier/current implementation identity, audience-level arithmetic, performance comparisons, and distributions, paired values, and annotated subsets when relevant.
+  - `references/progress-method-teaching.md`: audience-level method explanation and comparison, with worked examples, purposeful visuals and notes, and evidence-scoped attribution.
 - `workflows/journal-club.md`: paper map, Figure evidence chain, teaching logic, and conclusion boundaries; Deep-read mode adds an `understanding_map.md` from a ChatGPT dialogue/notes file.
 - `workflows/idea-discussion.md`: evidence-first discussion, feasible alternatives, current design, authorized production, feedback-driven revision, and a decision-oriented ending.
   - `references/idea-validation-design.md`: conditional guidance for preliminary evidence, prediction tasks, appropriate metrics, and intervention tests.
@@ -76,7 +76,7 @@ Use $reona-ppt-skill to plan this mixed lab-meeting deck and complete the scient
 
 ## Validation
 
-The v2 workflow was forward-tested against v1 on four realistic planning tasks: Progress Update, Journal Club, Idea Discussion, and Mixed Deck. Independent A/B evaluation scored v1 at `76/80` and v2 at `79/80`; a targeted Journal Club fix then scored `20/20` in re-evaluation. Later refinements use clearly labeled maintenance audits or forward applications and do not inherit the independent A/B score. The method-comparison refinement received an independent planning application on three synthetic requests, reviewed against eight criteria; it carries no rendering or A/B improvement score. See [VALIDATION.md](VALIDATION.md).
+The v2 workflow was forward-tested against v1 on four realistic planning tasks: Progress Update, Journal Club, Idea Discussion, and Mixed Deck. Independent A/B evaluation scored v1 at `76/80` and v2 at `79/80`; a targeted Journal Club fix then scored `20/20` in re-evaluation. Later refinements use clearly labeled maintenance audits or forward applications and do not inherit the independent A/B score. The current Progress teaching refinement narrows an earlier method-comparison patch; its scope and validation are recorded separately from that patch's synthetic forward application. See [VALIDATION.md](VALIDATION.md).
 
 ## Scope
 

@@ -17,7 +17,7 @@ For each workstream record:
 | Workstream | Audience-readable name, not folder/module name |
 | Evidence profile | computational / experimental / hybrid / general, plus one-sentence dependency rationale |
 | Audience priority | primary / secondary / backup, plus the one takeaway the audience must retain |
-| Audience starting point | Domain and mathematical knowledge needed for this workstream; infer from the user's brief and identify prerequisites that must be taught |
+| Audience starting point | When explanation is needed, infer existing knowledge and prerequisites to teach from the user's brief |
 | Starting premise | The observation, prior result, operational friction, or preset hypothesis that started the workstream |
 | Scientific/operational question | What this workstream is trying to establish or remove |
 | Authoritative source order | Which current sources govern the premise, methods, result, release state, and limitations |
@@ -72,7 +72,7 @@ Default order:
 
 Let audience priority and conceptual dependency determine slide count. Compress repeated evidence, not missing logic. Workflow detail belongs where it is required to understand the result, reproduce the claim boundary, or distinguish a full comparison from a local diagnostic.
 
-When comparing an earlier and a current algorithm or processing pipeline, read [progress-method-comparison.md](../references/progress-method-comparison.md). If the audience must learn the method to judge the change, teach the baseline and changed operations before the detailed results. Use the comparison dimensions the user requested; a routine status update does not need this branch.
+When the audience needs to understand a method or judge a method change, read [progress-method-teaching.md](../references/progress-method-teaching.md). It adds audience-level examples, purposeful schematics and notes, and comparison guidance within the selected evidence profile. Use the explanation depth and comparison dimensions the user requested.
 
 Name each workstream by the audience-facing achievement or question, not by its directory, repository, package, or internal acronym. Independent workstreams may remain independent; use a brief transition instead of inventing a causal progression.
 
@@ -112,7 +112,7 @@ Each slide entry in `scientific_handoff.md` must contain:
 - evidence profile and, for a hybrid workstream, the profile of the current stage;
 - audience priority and required takeaway;
 - starting premise and authoritative source priority when needed to interpret the result;
-- slide job, core message or question, displayed evidence, supporting unit, any material qualification, status, and speaker-note job;
+- slide job, single conclusion or learning takeaway, displayed evidence, supporting unit, boundary, status, and speaker-note job;
 - only the decision-bearing fields required by the selected computational or experimental reference;
 - software release snapshot when relevant.
 
