@@ -24,6 +24,7 @@ Archetype-specific artifacts are planning worksheets; the designated production 
 - Audience:
 - Meeting type:
 - Decision/learning goal:
+- Audience starting point and requested-question coverage, when needed:
 
 ## Section routing
 | Section | Archetype | Section question | Required outcome |
@@ -39,7 +40,7 @@ Archetype-specific artifacts are planning worksheets; the designated production 
 - Progress evidence profile / current stage profile, when relevant:
 - Audience priority / required takeaway, for Progress:
 - Slide job:
-- Single conclusion:
+- Core message or question:
 - Starting premise and source priority, for Progress when needed:
 - Context required:
 - Representation/inference lock, for a new analysis: input object / coordinate semantics / transformation or output / allowed inference / forbidden inference:

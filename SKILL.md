@@ -36,7 +36,7 @@ Read [references/scientific-content-contract.md](references/scientific-content-c
 
 ## Shared Scientific Rules
 
-- Give each slide one scientific job and one defensible conclusion. The title should communicate the question or conclusion, not merely name a dataset, file, module, or figure number.
+- Give each slide one scientific job and a clear message: a question, a taught operation, or a supported result. The title should communicate that job, not merely name a dataset, file, module, or figure number. Add a takeaway sentence only when it helps interpretation; explanatory pages need no forced conclusion bar.
 - Put the analysis or experimental unit on the slide when it affects interpretation. When observations are nested, state what `n` counts rather than using cells, fields, wells, or repeated measurements as implicit independent units.
 - Match every conclusion to the displayed evidence. Correlation is not causality; gene-level change is not pathway proof; an uncorrected trend is not a validated result.
 - Do not force weakly annotated measurements into a biological identity to make a cleaner story. If a result is not integrated into the current workflow, show it as a standalone result and break the pipeline connection visually.
@@ -45,7 +45,7 @@ Read [references/scientific-content-contract.md](references/scientific-content-c
 - Verify consequential literature and method claims against primary sources within the requested research scope. Use external context when it serves the question; distinguish it from the user's own results.
 - Write the content directly: question, evidence, interpretation, operation, and decision. Keep qualifications that affect these; remove repeated disclaimers, debate history, and ritual statements of what each slide does not claim. Follow `anti-defensive-writing` when available; the notes protocol contains the core rule.
 - Never use AI-generated images as experimental evidence. Use them only for clearly explanatory schematics, workflows, conceptual mechanisms, or non-data illustrations.
-- If a formula belongs in the main deck, pair it with one plain-language sentence stating its scientific role. Define every displayed symbol before or beside the formula. Render it as mathematics; never simulate subscripts or superscripts with ordinary body text. Put derivations, dense objectives, and long lexicographic rules in backup slides.
+- If a formula belongs in the main deck, pair it with one plain-language sentence stating its scientific role. Define every displayed symbol before or beside the formula. Render it as mathematics; never simulate subscripts or superscripts with ordinary body text. Use notes for necessary reasoning that would crowd the slide; use backup slides when a longer derivation, dense objective, or decision rule needs separate inspection.
 
 ## Software Storytelling
 
@@ -90,6 +90,7 @@ After generation, inspect the source render, then re-inspect every page rendered
 - scientific figures are legible, schematics cannot be mistaken for data, formula meaning is explicit, and equation fonts, symbols, subscripts, superscripts, minus signs, and relation signs survive export without empty glyphs;
 - no text, caption, or label overlaps or crosses its container;
 - notes teach the question, design/readout, figure or method, conclusion, and next step; material qualifications appear where needed, without repeated defensive commentary;
+- for an unfamiliar method, a listener with the stated background can identify the data object, follow a worked operation, and explain its output; a correct formula or attractive schematic alone does not establish understandable teaching;
 - slides, notes, screenshots, and source manifests agree on numbers, analysis units, terminology, evidence identity, and software version; removed or replaced claims, visuals, terms, and versions do not survive in any of them;
 - parameter wording agrees with its recorded provenance and comparison scope; a current numerical example is not presented as a transferable constant;
 - each Progress workstream has the correct evidence profile; hybrid claims preserve both stage-level chains, while experimental claims keep units and `n`, performed execution, run validity, and repetition/corroboration distinct;

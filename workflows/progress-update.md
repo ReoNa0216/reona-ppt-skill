@@ -17,6 +17,7 @@ For each workstream record:
 | Workstream | Audience-readable name, not folder/module name |
 | Evidence profile | computational / experimental / hybrid / general, plus one-sentence dependency rationale |
 | Audience priority | primary / secondary / backup, plus the one takeaway the audience must retain |
+| Audience starting point | Domain and mathematical knowledge needed for this workstream; infer from the user's brief and identify prerequisites that must be taught |
 | Starting premise | The observation, prior result, operational friction, or preset hypothesis that started the workstream |
 | Scientific/operational question | What this workstream is trying to establish or remove |
 | Authoritative source order | Which current sources govern the premise, methods, result, release state, and limitations |
@@ -37,6 +38,7 @@ Complete `Starting premise`, `Authoritative source order`, `Strongest completed 
 - Do not select the most visually convenient figure and then reverse-engineer the workstream conclusion from it. The displayed evidence must answer the actual workstream question.
 - Lead with the strongest defensible achievement. Keep a necessary limitation close to the result, but do not let a catalogue of caveats obscure what was completed.
 - Assign `primary / secondary / backup` before storyboarding. Give explanation depth to the user's priorities; do not let adjacent completed work consume equal space merely because it exists.
+- Map the user's requested questions to the slide roster and note jobs before production. Check coverage there rather than adding a separate requirements document. Infer audience needs from the brief; ask only when a missing fact would change the explanation or comparison.
 - Treat an old deck as a style/teaching reference unless its scientific claims are reverified against current sources.
 
 ## Workstream evidence-profile router
@@ -69,6 +71,8 @@ Default order:
 `starting premise / workstream question → strongest completed result → displayed evidence → conclusion boundary → status`
 
 Let audience priority and conceptual dependency determine slide count. Compress repeated evidence, not missing logic. Workflow detail belongs where it is required to understand the result, reproduce the claim boundary, or distinguish a full comparison from a local diagnostic.
+
+When comparing an earlier and a current algorithm or processing pipeline, read [progress-method-comparison.md](../references/progress-method-comparison.md). If the audience must learn the method to judge the change, teach the baseline and changed operations before the detailed results. Use the comparison dimensions the user requested; a routine status update does not need this branch.
 
 Name each workstream by the audience-facing achievement or question, not by its directory, repository, package, or internal acronym. Independent workstreams may remain independent; use a brief transition instead of inventing a causal progression.
 
@@ -108,7 +112,7 @@ Each slide entry in `scientific_handoff.md` must contain:
 - evidence profile and, for a hybrid workstream, the profile of the current stage;
 - audience priority and required takeaway;
 - starting premise and authoritative source priority when needed to interpret the result;
-- slide job, single conclusion, displayed evidence, supporting unit, boundary, status, and speaker-note job;
+- slide job, core message or question, displayed evidence, supporting unit, any material qualification, status, and speaker-note job;
 - only the decision-bearing fields required by the selected computational or experimental reference;
 - software release snapshot when relevant.
 

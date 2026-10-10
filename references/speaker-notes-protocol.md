@@ -47,6 +47,8 @@ For a computational-method slide, use the relevant subset of:
 
 Do not narrate every implementation detail. Explain the details needed to understand the stage dependency, the displayed result, and whether a parameter was derived, compared end to end, sliced on a fixed axis, or only checked diagnostically.
 
+When teaching an unfamiliar calculation, the notes should let the presenter reproduce a small worked example: identify the input objects and units, explain each intermediate value and why the arithmetic gives the intended quantity, then connect the output to the next operation. State what a boundary, denominator, average, or running total counts. Keep the essential object and transformation visible on the slide; use notes for the reasoning that would crowd it. A shorthand such as “subtract positions” or “take a cumulative sum” is not a complete explanation.
+
 For an experimental slide, use the relevant subset of:
 
 `contrast and controls → independent unit and n → what was actually performed → readout and QC → result → repeat/corroboration status`
