@@ -84,7 +84,7 @@ All eight planning criteria passed main-agent inspection of the independent appl
 
 ## Converged guidance: transfer desk application
 
-The following two synthetic requests exercise method teaching without an old/new comparison and a comparison of physical procedures. The same agent authored the cases, applied the converged guidance, and reviewed the decisions. This is a desk application, with no rendered deck or independent effectiveness score.
+The following two synthetic requests exercised method teaching without an old/new comparison and a comparison of physical procedures at commit `0f5c69d`. The same agent authored the cases, applied the converged guidance, and reviewed the decisions. This was a desk application, with no rendered deck or independent effectiveness score.
 
 ### Request D: explain a classifier readout
 
@@ -109,3 +109,31 @@ Source packet: the earlier procedure uses 20 min incubation and 1 µM reagent; t
 Applied plan: use the experimental profile. Show the changed incubation and reagent conditions with their physical meaning, then a compact table of recorded total time and fluorescence at the preparation unit. An exact before/after flow can show incubation and reagent concentration without a numerical method lesson. Notes explain the measured readout and retain the day/procedure alignment beside its interpretation. Report the 10 min observed reduction in total time and the observed fluorescence means; keep causal attribution of fluorescence changes at the available evidence scope. No independent benefit is assigned to concentration or incubation, and no unrecorded variability or significance is supplied.
 
 Review: explanation depth follows the familiar audience, comparison uses the actual procedures and conditions, and the two changed factors plus day alignment constrain attribution. Performance guidance stays conditional on the reported time measurement; no computational benchmark branch is added.
+
+## Consistency regression application
+
+Cases F–I reuse the synthetic requests from the read-only audit of `0f5c69d`. A fresh agent receives only the candidate runtime skill and these requests, without the earlier findings, intended fixes, or validation records. The task is planning only, with no file changes, experiment, network access, image generation, or PPT export.
+
+### Source packet
+
+- **F, implementation-only method:** plan at most 4 slides for 5 minutes, teaching new lab members a length-summary function with ordinary mathematical knowledge. Local source r17 and code review establish: sort repeated lengths within one sample; with at least 5 values, discard the smallest and largest once and average the remainder; with fewer values, average all. The teaching input is `[4, 5, 6, 7, 28]` mm. There is no execution log, real result, or performance evidence. Main pages should carry necessary visuals and text, notes should explain the calculation, and no next step is requested.
+- **G, blocked experiment:** plan 3 slides for a familiar audience about a comparison of two treatments' fluorescence. Two independent preparations and acquisitions are complete. The first run's positive control has no signal; the second run's background exceeds the usable range. Both fail predefined QC. Original images and QC records exist; no interpretable treatment comparison or chosen repair exists. The purpose is discussing the blockage, with no additional experiment.
+- **H, development software:** plan 3 slides explaining a user's review-and-save task. Official v0.4 lacks the feature; local a12bc34 implements it and was demonstrated. Selecting a result row displays its raw curve; saving writes the original row identifier. Matching source, a demonstration log, a screenshot of selected row 8 with its curve, and a save-success screenshot are provided as descriptions. The log checks that the saved identifier matches input row 8. The identifier's actual value is not supplied. Screenshots use demo data. Report the local version without publishing.
+- **I, cell-level exploration:** plan 2 slides from a frozen public standardized expression matrix and author-provided cell, treatment, and donor labels. A fixed gene set supplies each cell's mean score, and existing plots show two cell-score distributions. There are 1,000 cells from 6 donors, 3 donors per treatment. The current descriptive observation is a higher cell-score distribution in the treatment group; no donor-level comparison exists. No new experiment, annotation, raw-data processing, or additional analysis is requested. Actual files are absent from the synthetic packet; existing assets may be registered for later inclusion.
+
+### Review criteria
+
+Check observable planning decisions: a valid complete calculation with useful notes; implementation-only rules represented without invented runs or forced parameter categories; blockers presented without invented treatment results; local-version evidence and demo identity retained; cell-level observations and donor structure distinguished without mandatory extra analysis; and requested page/time/scope constraints respected. Inspect any remaining contradictions affecting these decisions. These checks do not assess rendered-slide quality or independent treatment effects.
+
+### Observed application
+
+The fresh agent read only the runtime skill and the references needed for the four requests. The main agent inspected its actual plans and note excerpts against the source packet and criteria.
+
+| Case | Observed decisions |
+|---|---|
+| F | Computational plus method teaching; 3 pages totaling 5 minutes. The visible example retained `[4,5,6,7,28] → [5,6,7] → 6 mm`. Notes explained the intermediate sum 18 mm and the denominator 3, without requiring those intermediate values on the page. The rule at 5 observations remained a source-defined branch with no execution or optimization claim. No performance or next-step page was added. |
+| G | Experimental; 3 pages reported the completed executions and two different QC failures, ending with the unresolved measurement-validity discussion. The plan supplied neither a treatment effect nor an invented repair or repeat-validation result. |
+| H | Computational; 3 pages used local a12bc34 and demo identity. The selected-row screenshot supported curve viewing, the success screenshot supported save feedback, and the log supported identifier correspondence. Row position 8 was not substituted for the unspecified original identifier. Official v0.4 did not replace the demonstrated local version. |
+| I | Computational; 2 pages retained the frozen input and author labels, described cell-level score distributions, and recorded 6 donors separately from 1,000 cells. The plan added no donor-level result, significance claim, reannotation, or required analysis. Missing asset paths were registered for later binding. |
+
+No conflict blocking these planning decisions was reported or found in the reviewed output. This is an independent planning application with main-agent review, not a blinded A/B comparison, an independent quality score, or a rendered-PPT test. The production-workflow handoff wording was reviewed statically; its downstream confirmation and export behavior were not exercised.

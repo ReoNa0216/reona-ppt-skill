@@ -1,61 +1,31 @@
 # Progress Computational Evidence
 
-Read this reference for a `computational` Progress workstream and for every computational stage of a `hybrid` workstream. Do not load it merely because the scientific subject is biological; the current claim must depend on code, data processing, an algorithm, or a software state.
+Read this reference for a `computational` Progress workstream and for every computational stage of a `hybrid` workstream. The reported claim must depend on code, data processing, an algorithm, or a software state.
 
-## Process execution ledger
+## Process execution evidence
 
-For every process that may appear in the deck, record:
+Use existing source and run records to connect each claim-bearing stage to the relevant evidence:
 
-| Field | Required content |
+| Field | Content |
 |---|---|
 | Audience object | What enters this stage, in audience-readable language |
 | Implemented operation | What the inspected source or contract implements |
-| Execution evidence | Run command, run record, configuration/hash, log, or other evidence that this exact work executed the operation |
-| Result artifact | The output that demonstrates the operation's observed result |
-| Allowed claim | The strongest wording jointly supported by implementation, execution, and result |
-| Excluded claim | A plausible overstatement that the evidence does not support |
+| Execution evidence | Recorded execution and configuration, or its known absence when relevant |
+| Result artifact | Observed output when execution is being reported |
+| Supported claim | What the available records establish at the implementation, execution, or result stage |
 
-Code presence, recorded execution, and result evidence are three different facts. A method found only in source is `implementation-only`; do not describe it as part of the completed run. If current source differs from the executed snapshot, state which behavior is established by the run artifacts and which is only current implementation. Do not import a stage merely because it appears in an older deck.
+Code presence, recorded execution, and result evidence are three different facts. A method found only in source is implementation-only; do not describe it as part of a completed run. If current source differs from the executed snapshot, identify which behavior the run artifacts establish and which is only current implementation.
 
-Treat a reference deck as two separate sources: it may govern visual identity, teaching depth, or useful explanatory patterns, but its scientific content is subordinate to current contracts, run records, and results.
+## Parameter provenance and comparison scope
 
-## Parameter evidence ledger
+For a parameter or decision rule needed to interpret the presentation, record its role, value or formula, and source or derivation. Reuse the process execution record: a rule may be implemented without having run, or run without a direct alternative comparison. State those facts when they affect the claim.
 
-Record each exact parameter or decision rule that matters to the audience as:
+For an actual comparison or diagnostic, record what varied, what stayed fixed, which affected stages reran, and which result was evaluated. Describe the coverage in ordinary language. For example, changing a threshold on a frozen result establishes a local comparison; a full-pipeline comparison reruns every stage the change can affect. Deleting observations from a frozen output and refitting after deletion test different properties.
 
-`role → value/formula → source → alternatives actually executed → affected scope → evidence class → wording boundary`
+Parameter origin and validation scope are separate facts: a data-derived value can also have been compared against alternatives. They need no single category label. Use “optimized,” “blind-selected,” “preregistered,” “validated,” or “generalizable” only when the source and actual comparison support that word. A local diagnostic should retain its specific scope when discussed as sensitivity or stability evidence.
 
-Use the narrowest applicable evidence class; use more than one only when they describe different scopes and keep those scopes explicit:
+When discussing transfer, distinguish the reusable rule, any quantity that must be re-estimated for new data, and the current numerical instance. Keep illustrative values separate from evidence used to choose parameters.
 
-- **data-derived** — estimated from current data through a fixed formula; the formula's multiplier may still be untested;
-- **full rerun comparison** — alternatives reran every downstream stage that the parameter can affect;
-- **local endpoint comparison** — alternatives changed only a local diagnostic such as recall, not the final axis or model;
-- **fixed-axis slice** — thresholds were applied to one already frozen axis or assignment;
-- **perturbation stability** — the fixed method was challenged by a grid shift, deletion, resampling, or similar perturbation;
-- **diagnostic/nonbinding** — computed or checked but not used to make the current decision, or far from its stopping limit;
-- **untested frozen constant** — one value was executed with no direct alternative comparison.
+## Computational explanation
 
-Never collapse these classes into the generic word “sensitivity.” In particular, a fixed-axis slice is not a full pipeline sensitivity test, and deleting data from a frozen result is not the same as refitting without those data. Use “optimized,” “blind-selected,” “preregistered,” “validated,” or “generalizable” only when the source and comparison scope support that exact word.
-
-Separate three layers whenever transfer is discussed:
-
-1. the reusable algorithmic rule or invariant;
-2. the dataset-specific quantity that must be re-estimated;
-3. the current dataset's numerical instance or example.
-
-An illustrative candidate or current feature count may teach the method, but it must not become the rationale for the method or a target used to tune parameters.
-
-## Computational teaching ladder
-
-Before allocating slides to a primary method-heavy workstream, list its prerequisite concepts in dependency order:
-
-`data object and analysis unit → stage input → operation and intuition → formula or decision rule when needed → stage output → next-stage dependency → execution evidence → boundary`
-
-Use one audience-level conceptual jump per slide. A simple result may need one slide; a multi-stage method may need several. Do not impose a nominal page cap when that would skip a prerequisite, introduce a parameter before its role, or jump from one intermediate representation to a later decision.
-
-- Introduce what is counted, compared, shifted, grouped, or assigned before presenting its statistic.
-- State the unit and construction of folds, groups, windows, or held-out sets; do not replace their design with a convenient but inaccurate label.
-- For a non-intuitive chart, define both axes, the statistic, the analysis unit, and the reading direction.
-- Introduce a general rule before a current numerical example. Label current values as current instances, not universal constants.
-- Put a main-deck formula only where it advances the stage logic. Define every symbol on the slide, give one plain-language purpose, and explain selection order in prose before a compact optimization expression. Move full derivations and dense parameter inventories to backup.
-- If a term does not let a first-time listener identify the object, operation, and decision, rewrite it in ordinary Chinese or define it before using the short form. Internal names and untranslated English are not substitutes for explanation.
+For a method-heavy workstream, use [progress-method-teaching.md](progress-method-teaching.md) for prerequisite order, complete examples, schematics, and notes. Keep each stage's scientific input, operation, output, and downstream use identifiable. Define how consequential groups, folds, ranges, or held-out sets are constructed. Show the general rule before its current numerical instance, and retain the implementation or execution status of the stage being explained.

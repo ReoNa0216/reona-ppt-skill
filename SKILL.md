@@ -21,11 +21,11 @@ Route mixed decks section by section. Cover, agenda, transition, and closing pag
 
 ### 2. Audit sources and freeze claims
 
-- For research results, read the authoritative manuscript/report, methods, legends, and final figures before outlining. For Progress workstreams, also freeze the actual starting premise and source priority before selecting the strongest completed result. For software, inspect the current official repository and release documentation, not an older local copy.
+- For research results, read the authoritative manuscript/report, methods, legends, and available results before outlining. For Progress workstreams, establish the actual starting premise and source priority before selecting the most informative supported progress. For software, inspect source and records for the version being reported.
 - Record the planning information required by the routed workflow. Use its named worksheets for new projects, or equivalent sections in an existing authoritative content source; avoid duplicate records.
 - Freeze each consequential claim as `claim → source → displayed evidence → analysis unit → boundary → evidence status`.
 - For each Progress workstream, infer its evidence profile from what the claim depends on, not from topic keywords. Route a hybrid claim stage by stage; do not require the user to preselect dry-lab or wet-lab mode.
-- For computational Progress claims, distinguish `implemented in source → executed in the recorded work → supported by a result artifact`. A source-code path alone does not prove execution. Classify exact parameters by the comparison scope defined in the Progress workflow; do not relabel fixed-axis slices or local diagnostics as full sensitivity tests.
+- For computational Progress claims, distinguish `implemented in source → executed in the recorded work → supported by a result artifact`. A source-code path alone does not prove execution. Record consequential parameter provenance and actual comparison scope using the computational reference.
 - For experimental Progress claims, distinguish `planned protocol → performed procedure → QC-passed measurement → observed result → independent repetition or corroboration`. Do not infer controls, independence, execution, or validation from a plausible protocol or polished plot.
 - Use audience-readable descriptions, never internal folder or module names. Introduce each dataset before its result: what was sampled, the comparison, and the readout. Explain a limitation when it changes interpretation or a decision.
 - Distinguish **established / source-supported / inference / proposal** in planning. Do not expose these audit labels on slides unless they help the audience.
@@ -36,7 +36,7 @@ Read [references/scientific-content-contract.md](references/scientific-content-c
 
 ## Shared Scientific Rules
 
-- Give each slide one scientific job and one defensible conclusion. The title should communicate the question or conclusion, not merely name a dataset, file, module, or figure number.
+- Give each slide one scientific job and a clear message: a question, an operation to understand, or a supported result. The title should communicate that job, not merely name a dataset, file, module, or figure number.
 - Put the analysis or experimental unit on the slide when it affects interpretation. When observations are nested, state what `n` counts rather than using cells, fields, wells, or repeated measurements as implicit independent units.
 - Match every conclusion to the displayed evidence. Correlation is not causality; gene-level change is not pathway proof; an uncorrected trend is not a validated result.
 - Do not force weakly annotated measurements into a biological identity to make a cleaner story. If a result is not integrated into the current workflow, show it as a standalone result and break the pipeline connection visually.
@@ -45,13 +45,13 @@ Read [references/scientific-content-contract.md](references/scientific-content-c
 - Verify consequential literature and method claims against primary sources within the requested research scope. Use external context when it serves the question; distinguish it from the user's own results.
 - Write the content directly: question, evidence, interpretation, operation, and decision. Keep qualifications that affect these; remove repeated disclaimers, debate history, and ritual statements of what each slide does not claim. Follow `anti-defensive-writing` when available; the notes protocol contains the core rule.
 - Never use AI-generated images as experimental evidence. Use them only for clearly explanatory schematics, workflows, conceptual mechanisms, or non-data illustrations.
-- If a formula belongs in the main deck, pair it with one plain-language sentence stating its scientific role. Define every displayed symbol before or beside the formula. Render it as mathematics; never simulate subscripts or superscripts with ordinary body text. Put derivations, dense objectives, and long lexicographic rules in backup slides.
+- If a formula belongs in the main deck, pair it with one plain-language sentence stating its scientific role. Define every displayed symbol before or beside the formula. Render it as mathematics; never simulate subscripts or superscripts with ordinary body text. Use notes for intermediate reasoning that would crowd the slide, and backup slides for extended derivations requiring visual inspection.
 
 ## Software Storytelling
 
 - Lead with the user's task and the friction removed, then show one concrete review flow and how the work is saved or handed off. Do not lead with implementation facts, test counts, file-format lists, or internal module names.
-- Use the current official release as the source of truth. Label demo data as demo data; never present an interface screenshot as an experimental result.
-- A claim about linked views, event editing, state recovery, or another interaction must be visible in the screenshot or explicitly verified from current source/release contracts in the notes.
+- Use the reported version's source, screenshots, and execution records consistently; state its development or release status. Label demo data as demo data; never present an interface screenshot as an experimental result.
+- A claimed interaction must be visible in the screenshot or supported by the matching source or execution record, with its evidence basis clear in the notes.
 
 ## Visual System And Reference Decks
 
@@ -83,13 +83,15 @@ Read [references/speaker-notes-protocol.md](references/speaker-notes-protocol.md
 
 Give the production pipeline the authoritative content source, source manifest, and asset plan. When using `ppt-master`, pass the chosen visual system as brand constraints and style guidance, with sizes and coordinates as soft starting points. Reuse the `reona_tsinghua` Brand workspace when applying the default palette.
 
+Map accepted content and style decisions and existing user authorization to the production workflow's prerequisites; resume at the first unmet requirement.
+
 After generation, inspect the source render, then re-inspect every page rendered from the final PPTX or exported PDF at presentation scale. Sign off on the final exported artifact; a correct source render is not sufficient. Apply these ReoNa-specific checks:
 
 - the shown panel or screenshot directly supports the stated claim;
 - figure identity, sample counts, analysis units, abbreviations, and evidence status are correct;
 - scientific figures are legible, schematics cannot be mistaken for data, formula meaning is explicit, and equation fonts, symbols, subscripts, superscripts, minus signs, and relation signs survive export without empty glyphs;
 - no text, caption, or label overlaps or crosses its container;
-- notes teach the question, design/readout, figure or method, conclusion, and next step; material qualifications appear where needed, without repeated defensive commentary;
+- notes explain the page's question, method or evidence, and supported takeaway; transitions or decisions appear where useful, with material qualifications at the relevant point;
 - slides, notes, screenshots, and source manifests agree on numbers, analysis units, terminology, evidence identity, and software version; removed or replaced claims, visuals, terms, and versions do not survive in any of them;
 - parameter wording agrees with its recorded provenance and comparison scope; a current numerical example is not presented as a transferable constant;
 - each Progress workstream has the correct evidence profile; hybrid claims preserve both stage-level chains, while experimental claims keep units and `n`, performed execution, run validity, and repetition/corroboration distinct;

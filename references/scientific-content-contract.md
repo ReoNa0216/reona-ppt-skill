@@ -39,7 +39,7 @@ Archetype-specific artifacts are planning worksheets; the designated production 
 - Progress evidence profile / current stage profile, when relevant:
 - Audience priority / required takeaway, for Progress:
 - Slide job:
-- Single conclusion:
+- Core message or learning takeaway:
 - Starting premise and source priority, for Progress when needed:
 - Context required:
 - Representation/inference lock, for a new analysis: input object / coordinate semantics / transformation or output / allowed inference / forbidden inference:
@@ -47,7 +47,7 @@ Archetype-specific artifacts are planning worksheets; the designated production 
 - Evidence / asset IDs:
 - Computational lock, when relevant — stage input/operation/output; implementation/execution/result; parameter scope; transferable rule/current instance:
 - Experimental lock, when relevant — contrast/controls; units and exact n; performed execution; measurement/QC; evidence maturity; choice provenance:
-- Software release snapshot, if relevant:
+- Reported software version/snapshot, if relevant:
 - Formula and scientific/biological role, if any:
 - Decision contract, for Idea slides when relevant: analysis unit / input boundary / target / strongest credible alternative / pass-fail comparison / generalization or transfer definition:
 - Independent cross-check, when the main readout is indirect or plausibly confounded:
@@ -66,17 +66,17 @@ Archetype-specific artifacts are planning worksheets; the designated production 
 
 The handoff is authoritative for scientific content. Visual production may improve layout and hierarchy, but must not strengthen claims, change analysis units, merge evidence with proposals, or substitute a source panel without re-auditing the claim. Internal audit concerns guide revision; they are not boilerplate to paste into slides or notes.
 
-The conditional lock and contract fields above are not required on every slide. Use them only where ambiguity would change the scientific interpretation or decision; do not create extra planning artifacts or repeat the same contract page by page.
+For each substantive slide, record its job and core message, source/asset references, and speaker-note job. Inherit common workstream facts through references; add a field or override only when it changes the page's interpretation or production. Omit inapplicable fields rather than filling the whole schema on every slide. Update dependent pages when an inherited fact changes.
 
 Use the representation/inference lock whenever terms such as distribution, state, module, alignment, or trajectory could be ambiguous. Instantiate the term for the actual data object; if it has no operational definition, remove it. A summary curve or score supports only the quantity it computes, not an unmeasured population change or mechanism.
 
 For each evidence panel, record one panel role and the visible cue that supports the claim. Direction, causality, stage localization, or biological identity requires evidence produced for that purpose; a panel's position or visual arrangement does not supply it.
 
-For a Progress workstream, preserve the `progress_map.md` truth lock in the handoff: starting premise, authoritative source order, strongest completed result, displayed evidence, analysis unit, and boundary. If later source review changes any of these, update the map and claim registry before changing the slide story.
+For a Progress workstream, preserve its question and starting premise, authoritative sources, current supported progress, and displayed evidence through references to the workstream record. Record the analysis or measurement object separately from the independent-repeat level when the inference needs it. Keep any material interpretation boundary with the relevant claim. If source review changes these facts, update the affected claims and pages.
 
 Also preserve the automatically inferred evidence profile. A `hybrid` claim must retain the handoff between experimental generation/acquisition and computational processing/analysis; do not let one audited stage stand in for the other.
 
-For a computational Progress workstream, also preserve the distinction between implementation, recorded execution, and observed result. Exact parameters must retain their evidence class: full rerun comparison, local endpoint comparison, fixed-axis slice, perturbation stability, data-derived, diagnostic/nonbinding, or untested frozen constant. `ppt-master` may shorten the visible wording but may not promote one class into another.
+For a computational Progress workstream, preserve implementation, recorded execution, observed result, and consequential parameter provenance and comparison scope from the computational reference. Production may shorten wording while keeping source-only rules, local checks, and end-to-end comparisons distinguishable.
 
 For an experimental Progress workstream, preserve the scientific contrast, controls, experimental versus nested observational units, exact `n`, actual execution, applicable validity/QC, exclusions or attrition, and evidence maturity. The visible slide may be concise, but it may not convert technical repeats into independent replication, a representative example into prevalence, or a QC-passed run into a confirmed biological result.
 
@@ -89,7 +89,7 @@ When an old deck is supplied as a reference, record whether each reused element 
 - `formula`: mathematical expression used in scientific reasoning.
 - `decorative`: minimal and never claim-bearing.
 
-For evidence, identify the exact source and page/panel or software state. For software evidence, also record the official repository reference, release/version, exact interface state, and whether the data are real or demonstrative. Crop from the authoritative original to isolate relevant evidence while retaining axes, legends, complete group labels, and annotations needed to interpret it. Routine cropping within an authorized edit needs no separate approval.
+For evidence, identify the exact source and page/panel or software state. For software evidence, record the reported source snapshot, development or release status, exact interface state, and whether the data are real or demonstrative. Crop from the authoritative original to isolate relevant evidence while retaining axes, legends, complete group labels, and annotations needed to interpret it. Routine cropping within an authorized edit needs no separate approval.
 
 Explanatory assets may contain conceptual state diagrams, trajectories, or labeled teaching values when their illustrative role is clear. Generate or redraw these as schematics; preserve quantitative evidence from its original source. Do not fabricate measurements, sample counts, statistical annotations, or realistic assay images that could be mistaken for results. Record prompts and inspect generated labels and arrows against the intended scientific meaning.
 

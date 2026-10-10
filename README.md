@@ -8,11 +8,11 @@ A Codex skill for developing, discussing, creating, and revising PI-facing scien
 - A mandatory Scientific Planning Gate before visual production.
 - Iterative Idea Discussion: compare designs, record accepted decisions, produce when authorized, and revise affected content from feedback.
 - Different emphasis for exploratory and execution decks, with optional pilot and prediction design guidance.
-- Progress workstream truth locks for starting premise, source priority, strongest completed result, and displayed evidence.
+- Progress workstream truth locks for starting premise, source priority, current supported progress, and displayed evidence.
 - Automatic Progress routing by claim dependency: computational, experimental, hybrid, or general.
 - Parallel evidence locks for computational execution/parameters and wet-lab design/execution/measurement, loaded only when relevant.
 - Conditional Progress method teaching: audience prerequisites, complete examples, complementary schematics and notes, and evidence-matched comparisons.
-- Software release snapshots and bidirectional slide–notes–manifest consistency checks.
+- Reported software snapshots, including development versions, and bidirectional slide–notes–manifest consistency checks.
 - Source-verified claims tied to displayed evidence, analysis units, boundaries, and evidence status.
 - Separate handling of scientific evidence, software UI, explanatory schematics, and formulas.
 - Archetype-aware speaker notes and ReoNa-specific final QA.
@@ -36,8 +36,8 @@ requested deliverable + export review → discussion and focused revision
 
 ## Workflows
 
-- `workflows/progress-update.md`: workstream truth locks, automatic evidence-profile routing, audience-priority teaching depth, optional external-validation grammar, and software release-aware user flows.
-  - `references/progress-computational-evidence.md`: execution, parameter-comparison scope, transfer, and computational teaching logic.
+- `workflows/progress-update.md`: shared workstream facts inherited by pages, automatic evidence-profile routing, audience-priority teaching depth, optional external-validation grammar, and software version-aware user flows.
+  - `references/progress-computational-evidence.md`: implementation/execution/result evidence, parameter provenance and actual comparison scope, transfer, and computational explanation.
   - `references/progress-wet-lab-evidence.md`: units and `n`, controls, performed execution, measurement validity, evidence maturity, and experimental teaching logic.
   - `references/progress-method-teaching.md`: audience-level method explanation and comparison, with worked examples, purposeful visuals and notes, and evidence-scoped attribution.
 - `workflows/journal-club.md`: paper map, Figure evidence chain, teaching logic, and conclusion boundaries; Deep-read mode adds an `understanding_map.md` from a ChatGPT dialogue/notes file.
@@ -76,7 +76,7 @@ Use $reona-ppt-skill to plan this mixed lab-meeting deck and complete the scient
 
 ## Validation
 
-The v2 workflow was forward-tested against v1 on four realistic planning tasks: Progress Update, Journal Club, Idea Discussion, and Mixed Deck. Independent A/B evaluation scored v1 at `76/80` and v2 at `79/80`; a targeted Journal Club fix then scored `20/20` in re-evaluation. Later refinements use clearly labeled maintenance audits or forward applications and do not inherit the independent A/B score. The current Progress teaching refinement narrows an earlier method-comparison patch; its scope and validation are recorded separately from that patch's synthetic forward application. See [VALIDATION.md](VALIDATION.md).
+The v2 workflow was forward-tested against v1 on four realistic planning tasks: Progress Update, Journal Club, Idea Discussion, and Mixed Deck. Independent A/B evaluation scored v1 at `76/80` and v2 at `79/80`; a targeted Journal Club fix then scored `20/20` in re-evaluation. Later refinements use clearly labeled maintenance audits or forward applications and do not inherit the independent A/B score. The current Progress refinement addresses shared-rule conflicts, duplicated planning fields, and conditional teaching and evidence requirements. Its validation is recorded separately from historical candidates. See [VALIDATION.md](VALIDATION.md).
 
 ## Scope
 

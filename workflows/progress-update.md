@@ -10,36 +10,30 @@ Do **not** force independent workstreams into one causal scientific story.
 
 ## Planning artifact: `progress_map.md`
 
-For each workstream record:
+Record workstream facts once in `progress_map.md` or the existing production source. Use the relevant fields below; pages inherit them by reference.
 
-| Field | Required content |
+| Field | Content |
 |---|---|
-| Workstream | Audience-readable name, not folder/module name |
+| Workstream and priority | Audience-readable question or achievement; primary / secondary / backup when allocating space across workstreams |
 | Evidence profile | computational / experimental / hybrid / general, plus one-sentence dependency rationale |
-| Audience priority | primary / secondary / backup, plus the one takeaway the audience must retain |
-| Audience starting point | When explanation is needed, infer existing knowledge and prerequisites to teach from the user's brief |
+| Audience question and starting point | What the user wants answered; existing knowledge and prerequisites to teach when explanation is needed |
 | Starting premise | The observation, prior result, operational friction, or preset hypothesis that started the workstream |
-| Scientific/operational question | What this workstream is trying to establish or remove |
-| Authoritative source order | Which current sources govern the premise, methods, result, release state, and limitations |
-| Since last report | What materially changed |
-| Strongest completed result | The most decision-relevant result already supported by the work |
-| Displayed evidence | The figure, table, or screenshot that most directly supports that result |
-| Analysis / experimental unit | The independent level that supports the stated inference |
-| Boundary | What the result does not establish |
-| Status | completed / ongoing / blocked / validation needed |
-| PI decision needed | include only when a real decision exists; otherwise omit |
+| Authoritative sources | Which sources govern the premise, method, reported version, and current findings |
+| Current progress and status | What changed or was learned, including supported findings, implemented capabilities, or documented blockers |
+| Displayed support | The source or artifact supporting that progress; distinguish explanatory illustrations from result evidence |
+| Analysis or measurement object | What is computed, observed, or displayed; record the independent-repeat level separately when the inference needs it |
+| Interpretation boundary | Include when it changes the meaning of a claim |
+| Discussion or decision | Include when a real unresolved choice or blocker needs discussion |
 
 ## Workstream truth lock
 
-Complete `Starting premise`, `Authoritative source order`, `Strongest completed result`, and `Displayed evidence` before choosing slide titles or layouts.
+Establish the question and starting premise, identify the authoritative sources, and select the most informative supported progress before choosing titles or layouts.
 
 - Treat folders, repository names, old slide decks, and internal labels as locators, not as audience-facing descriptions or scientific premises.
-- Read enough of the authoritative project sources to distinguish the original question, the preset expectation or candidate definition, the strongest completed result, and the main limitation.
+- Read enough of the authoritative project sources to distinguish the original question, preset expectation or candidate definition, current findings, and material unresolved issues.
 - Do not select the most visually convenient figure and then reverse-engineer the workstream conclusion from it. The displayed evidence must answer the actual workstream question.
-- Lead with the strongest defensible achievement. Keep a necessary limitation close to the result, but do not let a catalogue of caveats obscure what was completed.
-- Assign `primary / secondary / backup` before storyboarding. Give explanation depth to the user's priorities; do not let adjacent completed work consume equal space merely because it exists.
+- Lead with the most informative supported progress. Keep a necessary qualification close to the finding; an unfinished investigation or documented failure can be the central progress to discuss.
 - Map the user's requested questions to the slide roster and note jobs before production. Check coverage there rather than adding a separate requirements document. Infer audience needs from the brief; ask only when a missing fact would change the explanation or comparison.
-- Treat an old deck as a style/teaching reference unless its scientific claims are reverified against current sources.
 
 ## Workstream evidence-profile router
 
@@ -68,13 +62,11 @@ If sources are incomplete, mark the profile or stage `provisional`, inspect the 
 
 Default order:
 
-`starting premise / workstream question → strongest completed result → displayed evidence → conclusion boundary → status`
+`starting premise / workstream question → current progress → supporting evidence → interpretation / status`
 
-Let audience priority and conceptual dependency determine slide count. Compress repeated evidence, not missing logic. Workflow detail belongs where it is required to understand the result, reproduce the claim boundary, or distinguish a full comparison from a local diagnostic.
+Allocate space by the user's priorities, presentation time, and conceptual dependencies. Adjacent work need not receive equal space. Compress repeated evidence, not missing logic; move secondary detail to notes or backup when needed. Workflow detail belongs where it helps the audience understand the reported progress or comparison.
 
 When the audience needs to understand a method or judge a method change, read [progress-method-teaching.md](../references/progress-method-teaching.md). It adds audience-level examples, purposeful schematics and notes, and comparison guidance within the selected evidence profile. Use the explanation depth and comparison dimensions the user requested.
-
-Name each workstream by the audience-facing achievement or question, not by its directory, repository, package, or internal acronym. Independent workstreams may remain independent; use a brief transition instead of inventing a causal progression.
 
 When a workstream begins with an internal discovery or preset candidate definition and then tests it in external data, use this optional validation grammar:
 
@@ -82,38 +74,21 @@ When a workstream begins with an internal discovery or preset candidate definiti
 
 Use only the stages that exist. Do not imply that a localization dataset supports longitudinal comparison, or that a cell-level result has been independently validated at the patient, sample, or replicate level.
 
-For software, use:
+For software progress, ground the user-task narrative in one reported snapshot, recorded in the workstream or source manifest:
 
-`user friction → one concrete review flow → evidence that the interface removes the friction → save/handoff behavior`
-
-Do not lead with implementation facts, file formats, test counts, or internal module names.
-
-The interface state shown must support the claimed convenience. If a capability cannot be demonstrated by the screenshot, verify it from the current release/source contract in the notes or remove the claim.
-
-Before handoff, freeze one software release snapshot inside `progress_map.md` or the source manifest:
-
-- official repository and branch/tag/commit;
-- release maturity and displayed version;
+- source repository or local checkout and branch/tag/commit;
+- development or release status and displayed version;
 - exact screenshot version and interface state;
 - whether the screen uses real, demo, fixture, or synthetic data.
 
-The slide, screenshot label, notes, and source manifest must use the same snapshot. An older interface image may be retained only when explicitly approved and must not serve as evidence for a newer interaction. Field counts, schema widths, test counts, and internal state names belong on the slide only when they materially explain the user task or output semantics.
-
-For a computational method screenshot or schematic, apply the same evidence discipline as software: every visible state, field, control, and workflow claim must be present in the inspected version or verified by its authoritative contract. Do not fill an explanatory gap with a plausible interface behavior.
+Keep each behavior claim, screenshot, note, and source reference on the matching snapshot. A screenshot from another version can illustrate that version with its identity and role clear; it does not establish a different version's behavior.
 
 ## Closing rule
 
-End with **completed, verifiable outputs**. Add blockers, decisions, or next actions only when they are genuinely discussion-worthy; never add a generic “next step” page for symmetry.
+Close on the current supported progress and its significance. Include a blocker, decision, or next action when it advances the discussion; never add a generic “next step” page for symmetry.
 
 ## Storyboard minimum
 
-Each slide entry in `scientific_handoff.md` must contain:
+Use the shared handoff schema: a substantive page needs its job and core message, source/asset references, and speaker-note job. Inherit common profile, audience, provenance, and status from its workstream. Add stage-specific evidence, units, qualifications, or version differences only where they affect interpretation. A hybrid page retains the profile of the stage it describes.
 
-- evidence profile and, for a hybrid workstream, the profile of the current stage;
-- audience priority and required takeaway;
-- starting premise and authoritative source priority when needed to interpret the result;
-- slide job, single conclusion or learning takeaway, displayed evidence, supporting unit, boundary, status, and speaker-note job;
-- only the decision-bearing fields required by the selected computational or experimental reference;
-- software release snapshot when relevant.
-
-Before handoff, run an audience-language pass on the slide roster: expand abbreviations at first use, keep quantities in Arabic numerals, replace internal labels with audience-readable terms, and ensure no title depends on an unexplained method name or metric.
+Before handoff, check requested-question coverage and whether titles and explanations are understandable from the audience's stated starting point.

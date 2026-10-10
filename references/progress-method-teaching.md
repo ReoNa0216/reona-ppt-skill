@@ -16,7 +16,7 @@ Choose a small valid example that follows the actual rule. Keep object identitie
 
 Specify what uncertainty the visual should resolve and which objects, transformations, or before/after states must be visible. Actively use image generation when an explanatory schematic will make the operation easier to understand; use native elements for exact labels, arithmetic, or geometry where needed. Check the result against the rule and example, including arrows, values, and object identities.
 
-Keep the essential object and transformation on the slide. Use notes for the intermediate reasoning needed to reproduce and explain the example, including why the output follows. Notes should supply useful logic beyond the visible text. Longer derivations that need visual inspection can use backup slides. On an explanatory page, the learning takeaway can be the rule or operation itself; add a separate conclusion sentence only when it helps the audience.
+Keep the essential object and transformation on the slide. Use notes for the intermediate reasoning needed to reproduce and explain the example, including why the output follows. Notes should supply useful logic beyond the visible text; an explanatory page can take the rule or operation itself as its learning takeaway.
 
 ## Match comparisons and attribution to evidence
 

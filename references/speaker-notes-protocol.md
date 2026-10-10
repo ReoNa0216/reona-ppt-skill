@@ -15,7 +15,7 @@ Explain, when relevant:
 
 Do not repeat the title, narrate page layout, or spell quantities with Chinese numeral words. At first relevant use, explain unfamiliar abbreviations, material or cell identities, treatments, intervention targets, and comparison groups before interpreting their results. If a visual is conceptual or demo data, identify that role clearly.
 
-Keep the visible slide focused on the main question and conclusion. Use notes to teach the experiment, figure, or calculation. Keep citations, exact panel locators, source paths, and asset provenance in a compact source block or manifest, separate from the spoken explanation. Add supporting context only when it helps explain the current page, and identify it as context rather than a displayed panel.
+Keep the visible slide focused on its question, operation, or result. Use notes to teach the experiment, figure, or calculation. Keep citations, exact panel locators, source paths, and asset provenance in a compact source block or manifest, separate from the spoken explanation. Add supporting context only when it helps explain the current page, and identify it as context rather than a displayed panel.
 
 Write affirmative explanations of what is studied, measured, inferred, or proposed. Retain uncertainty at the point where it affects a claim or decision; remove repeated caveats, defensive comparisons, obsolete debate history, and statements about unrelated capabilities. There is no mandatory limitation paragraph. If a sentence only explains what the page is not doing, replace it with the actual operation or delete it unless the distinction is essential.
 
@@ -24,9 +24,10 @@ Use audience-readable Chinese for the scientific object and operation. An intern
 After the visible slide is final, run a bidirectional consistency check:
 
 - every claim-bearing figure, table, screenshot, schematic, and formula on the slide is explained in the notes;
-- every page-specific visual, number, version, label, or position mentioned in the notes still exists on the current slide;
+- references to on-slide objects, values, versions, labels, and positions identify the correct current elements;
+- additional calculations, definitions, and background in notes agree with the current method and sources; their intermediate values need not appear on the slide, and illustrative calculations remain distinct from measured results;
 - quantities, analysis units, thresholds, evidence status, terminology, and software versions agree across slide, notes, and source manifest.
-- every exact parameter is described with the same role, derivation, comparison scope, and evidence class as the scientific handoff;
+- consequential parameter values, provenance, and comparison scope agree with the scientific handoff;
 - no note upgrades a local diagnostic, fixed-axis slice, or deletion stress into a full rerun or refit;
 - for an experimental claim, units and exact `n`, controls, performed execution, run validity, exclusions, and repeat/corroboration status agree with the handoff;
 - every formula symbol, chart axis, and non-intuitive statistic shown on the slide has a readable explanation, and no explanation survives for a removed symbol or panel.
@@ -37,13 +38,13 @@ Remove stale narration instead of preserving explanations for deleted or replace
 
 Use:
 
-`starting premise / question → what materially changed → evidence/readout → result → status/decision`
+`starting premise / question → current progress → evidence/readout → interpretation → status/decision when useful`
 
 For independent workstreams, provide a clean transition without inventing a scientific causal link. For software, explain the user task, the friction removed, what the shown screen state demonstrates, and how work is saved or handed off.
 
 For a computational-method slide, use the relevant subset of:
 
-`input object and analysis unit → operation → why it is needed → how to read the schematic/formula → output passed onward → evidence that this run executed it → parameter basis and comparison scope`
+`input object and analysis unit → operation → why it is needed → how to read the schematic/formula → output passed onward → implementation or execution status → parameter basis and comparison scope`
 
 Do not narrate every implementation detail. Explain the details needed to understand the stage dependency, the displayed result, and whether a parameter was derived, compared end to end, sliced on a fixed axis, or only checked diagnostically.
 
