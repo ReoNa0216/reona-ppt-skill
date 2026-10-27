@@ -13,7 +13,7 @@ Explain, when relevant:
 5. the supported conclusion, with any qualification that changes its interpretation;
 6. why the next slide follows.
 
-Do not repeat the title, narrate page layout, or spell quantities with Chinese numeral words. At first relevant use, explain unfamiliar abbreviations, material or cell identities, treatments, intervention targets, and comparison groups before interpreting their results. If a visual is conceptual or demo data, identify that role clearly.
+Use spatial cues to locate the relevant comparison, then explain what to notice and why it matters. Use Arabic numerals for quantities. At first relevant use, explain unfamiliar abbreviations, material or cell identities, treatments, intervention targets, and comparison groups before interpreting their results. If a visual is conceptual or demo data, identify that role clearly.
 
 Keep the visible slide focused on its question, operation, or result. Use notes to teach the experiment, figure, or calculation. Keep citations, exact panel locators, source paths, and asset provenance in a compact source block or manifest, separate from the spoken explanation. Add supporting context only when it helps explain the current page, and identify it as context rather than a displayed panel.
 
@@ -56,11 +56,12 @@ Explain only the design facts needed to interpret the evidence. For a hybrid wor
 
 ## Journal Club
 
-Use:
+For substantive pages, default to two sections in the requested note language:
 
-`question → experiment → how to read the figure → result → supported conclusion → why the next experiment follows`
+- **Spoken script (讲稿)**: natural oral prose following `question → experiment → comparison to look at → visible result → supported conclusion → next question`. Name the groups and the feature that supports the inference. Keep qualifications needed to understand that conclusion in the script.
+- **Deeper interpretation (深入解读)**: source-verified principles, control roles, experimental conditions, replication and statistics, calculations, and interpretation limits useful for questions. Explain the details that answer a concrete scientific question.
 
-Figure-heavy slides may use longer notes. The notes should teach the audience how to interpret the selected evidence without forcing every panel onto the page.
+Adapt this structure to an accepted reference deck; short transitions need only a script. Read the scripts consecutively to check the section handoff, terminology, oral rhythm, and why each next experiment follows. Audit the deeper interpretation separately so preparation detail stays out of the spoken narrative.
 
 ## Idea Discussion
 

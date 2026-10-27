@@ -79,14 +79,14 @@ Default structure:
 1. **Question / concept onboarding** — introduce the problem and prerequisites needed for the evidence that follows.
 2. **Paper / team context** — briefly introduce the paper and key teams' relevant expertise near the opening; use a dedicated page only when the content warrants it.
 3. **Experimental design** — show the paper's overall workflow before dense figures when needed.
-4. **Evidence chain** — organize by scientific question, splitting or combining panels according to their inferential role and readability.
+4. **Evidence chain** — organize main figures, supplementary evidence, and Methods by scientific question, splitting or combining panels according to their inferential role and readability.
 5. **Synthesis** — the contribution supported by the presented evidence, useful lessons, and consequential unresolved questions when present.
 
 Use source panels for the key results and schematics to explain the design or method. A schematic should lead back to the evidence supporting the conclusion. Coverage follows the central claims, not a target number of figures, panels, or pages; summarize secondary controls when that preserves the inference. Retain negative or mixed results that affect the central conclusion.
 
 **Deep-read mode**: use the understanding map to choose explanations and emphasis within this evidence chain. A useful explanation can be retained after the original confusion has been resolved; the audience need not retrace the dialogue's chronology.
 
-Title figure slides by the scientific question or supported conclusion, not by “Figure 3” alone. Use the source figure number only as a locator.
+Title figure slides by the scientific question or supported conclusion. Put each source panel locator once per slide, usually in the footer. Give literature cited in slides or notes a matching bibliographic entry with a DOI or source link.
 
 If one source figure supports sequential claims at different evidence levels, split those claims across slides when needed. For example, establish readout reliability or breadth before using a separate panel to argue mechanistic proximity; do not compress both into one slide merely because they share a figure number.
 
@@ -106,15 +106,15 @@ A good figure slide answers, in order:
 
 `What is the question? → How did they test it? → How do I read this panel? → What is the result? → What conclusion follows?`
 
-Use the slide itself for the question, evidence, and visual guides needed to read it. Keep a prerequisite on the main path when later evidence depends on it.
+Use the slide itself for the question, large evidence panels or explanatory diagrams, and brief guides needed to read them. Keep a prerequisite on the main path when later evidence depends on it. Express the user's emphasis through teaching depth; keep production labels and presenter assignments in the planning record.
 
 ## Notes and backup placement
 
-Follow the shared [speaker-notes protocol](../references/speaker-notes-protocol.md). For a figure slide, teach the question, experiment, readout, result, supported conclusion, and reason for the next experiment. For a method slide, explain the operation and how its output is used.
+Follow the two-layer Journal Club structure in the shared [speaker-notes protocol](../references/speaker-notes-protocol.md): a spoken script and deeper interpretation for questions.
 
 Place supporting detail according to how it will be used:
 
-- **Notes**: explanations that can be spoken alongside the current visual, including source-verified experimental conditions, unfamiliar statistics, intermediate calculations, and transitions.
+- **Notes**: a concise spoken explanation of the current evidence, followed by source-verified principles, controls, conditions, statistics, or calculations useful for questions.
 - **Backup**: a specific follow-up question that needs its own figure, table, comparison, or extended derivation to answer. Each backup page should have a clear question and a connection to the main deck.
 - **Omit**: detail that adds neither understanding of the evidence nor a useful answer to a relevant follow-up question.
 
@@ -123,3 +123,5 @@ Use effective explanations from the reader's notes without copying resolved deba
 ## Closing rule
 
 Synthesize what the presented evidence establishes and what the lab can reuse, test, or extend. Discuss unresolved issues where they affect the central conclusion or intended application. Let those findings determine the closing structure; there is no required limitation page or three-part summary.
+
+When proposing a follow-up experiment, use `finding → unresolved question → feasible test → outcomes that distinguish explanations`. Verify the critical intervention and controls against methods or primary literature, and identify the experiment on the slide as a proposal.

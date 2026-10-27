@@ -40,7 +40,7 @@ Read [references/scientific-content-contract.md](references/scientific-content-c
 - Put the analysis or experimental unit on the slide when it affects interpretation. When observations are nested, state what `n` counts rather than using cells, fields, wells, or repeated measurements as implicit independent units.
 - Match every conclusion to the displayed evidence. Correlation is not causality; gene-level change is not pathway proof; an uncorrected trend is not a validated result.
 - Do not force weakly annotated measurements into a biological identity to make a cleaner story. If a result is not integrated into the current workflow, show it as a standalone result and break the pipeline connection visually.
-- Expand each abbreviation at first audience-facing use with a Chinese explanation or English full name. Use Arabic numerals for quantities in slides and notes.
+- Define unfamiliar abbreviations at first relevant use. Put the expansion on the slide when it is needed to read the evidence; place supporting definitions in notes. Follow the requested slide and note languages. Use Arabic numerals for quantities in slides and notes.
 - Prefer ordinary Chinese for the object, operation, and decision. Retain English only when it is a necessary software name, standard abbreviation, or clearer technical term after definition. Do not use a centered dot as a prose separator; use Chinese punctuation, line breaks, arrows, or aligned columns according to meaning.
 - Verify consequential literature and method claims against primary sources within the requested research scope. Use external context when it serves the question; distinguish it from the user's own results.
 - Write the content directly: question, evidence, interpretation, operation, and decision. Keep qualifications that affect these; remove repeated disclaimers, debate history, and ritual statements of what each slide does not claim. Follow `anti-defensive-writing` when available; the notes protocol contains the core rule.
@@ -69,11 +69,11 @@ When the user asks to match an accepted deck, inspect representative rendered pa
 ## Figure And Layout Guardrails
 
 - Never place a badge, caption, or added label over a scientific figure or software screenshot. Put interpretation outside the image frame.
-- Crop a source figure only to isolate a claim-bearing panel. Start from the highest-resolution authoritative source and retain the axes, legends, group labels, and annotations needed to interpret that panel; exclude neighboring panels and slide chrome. Do not crop merely to fill a frame or recrop a low-resolution screenshot when the original is available.
+- Crop a source figure only to isolate a claim-bearing panel. Start from the highest-resolution authoritative source and retain the axes, legends, group labels, and annotations needed to interpret that panel; exclude neighboring panels and slide chrome. Check the embedded crop's effective resolution at its final display size; recover a sharper source or split the panel when details are blurred.
 - Check every metric and annotation against its container. No text may cross a divider, card edge, figure frame, or page edge.
 - Give non-intuitive charts readable axis labels and enough room to explain the statistic. Give complex equations dedicated width or split the explanation; never solve overflow by shrinking symbols until they are unreadable.
 - Prefer fewer legible panels over a comprehensive but unreadable collage. Evidence must remain readable at presentation scale.
-- Before generating a schematic, define the meaning of each object, arrow, and color. Inspect the result for scientific ambiguity as well as appearance. Keep generated assets and prompts alongside their source records.
+- Before generating a schematic, define the meaning of each object, arrow, and color. Depict the claimed location, interaction, or state change explicitly with recognizable structures, then check these relationships in the rendered slide. Keep generated assets and prompts alongside their source records.
 
 ## Speaker Notes
 
@@ -82,6 +82,8 @@ Read [references/speaker-notes-protocol.md](references/speaker-notes-protocol.md
 ## Handoff And Final Review
 
 Give the production pipeline the authoritative content source, source manifest, and asset plan. When using `ppt-master`, pass the chosen visual system as brand constraints and style guidance, with sizes and coordinates as soft starting points. Reuse the `reona_tsinghua` Brand workspace when applying the default palette.
+
+Record the production tool, authoritative editable source, and latest deliverable in the existing project record. Select the matching generation, template, or native-PPTX workflow. After merging or manual edits, point the record to the current artifact and preserve its native layout and objects during focused revisions.
 
 Map accepted content and style decisions and existing user authorization to the production workflow's prerequisites; resume at the first unmet requirement.
 
