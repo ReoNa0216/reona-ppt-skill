@@ -18,9 +18,9 @@ Read the primary paper, methods, figure legends, and relevant supplementary figu
 
 ## Source hierarchy (hard rule)
 
-- **Factual authority**: paper / supplement > dialogue. Every number, statistic, and conclusion that first appears in the dialogue must be re-checked against the PDF before it may become a claim. Dialogue decides *how* to present and *what* to emphasize; it never decides *what the facts are*.
+- **Factual authority**: verify study results against the primary paper and supplement, and external background against the relevant primary literature.
+- **Dialogue and notes**: trace factual claims to those sources, and record the evidence and reasoning behind interpretations or proposals. Resolve discrepancies before using the affected claim.
 - **Presentation priority**: use the user's learning goals and notes to identify useful emphasis and explanations. Select the main narrative for the audience's prerequisites and the paper's evidence chain.
-- Do not inherit a dialogue paraphrase as a claim; if it conflicts with the paper, stop and re-audit the claim registry.
 
 ## Audience question
 
@@ -65,7 +65,7 @@ When a dialogue/notes file is provided, record `understanding_map.md` or equival
 |---|---|
 | Question chain | what I first failed to understand; what question each answer raised next; which question ultimately changed my reading |
 | Key conceptual hurdles | concept; why it was hard; the explanation that worked; relevance to this audience's prerequisites |
-| Interpretation / insight | my understanding; the source passage; status (`source-supported` / `interpretation`) |
+| Interpretation / insight | my understanding; source passages; status using the shared [evidence-status definitions](../references/scientific-content-contract.md#evidence-status) |
 | Critical points | what I doubted; whether the paper resolves it; whether it changes a central claim or its interpretation |
 | Methods worth learning | method; why it is worth learning; whether to expand Methods |
 | Relevance to my work | directly reusable / inspiring only / must not extrapolate |
@@ -102,7 +102,7 @@ When a comparison spans stages or repeated rounds, identify the objects being co
 
 ## Figure-slide grammar
 
-A good figure slide answers, in order:
+The slide and spoken explanation together answer:
 
 `What is the question? → How did they test it? → How do I read this panel? → What is the result? → What conclusion follows?`
 
@@ -110,11 +110,11 @@ Use the slide itself for the question, large evidence panels or explanatory diag
 
 ## Notes and backup placement
 
-Follow the two-layer Journal Club structure in the shared [speaker-notes protocol](../references/speaker-notes-protocol.md): a spoken script and deeper interpretation for questions.
+Use the defaults and adaptations in the [Journal Club speaker-notes protocol](../references/speaker-notes-protocol.md#journal-club).
 
 Place supporting detail according to how it will be used:
 
-- **Notes**: a concise spoken explanation of the current evidence, followed by source-verified principles, controls, conditions, statistics, or calculations useful for questions.
+- **Notes**: explanation or supporting detail that can be understood alongside the current visual.
 - **Backup**: a specific follow-up question that needs its own figure, table, comparison, or extended derivation to answer. Each backup page should have a clear question and a connection to the main deck.
 - **Omit**: detail that adds neither understanding of the evidence nor a useful answer to a relevant follow-up question.
 

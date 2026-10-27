@@ -19,7 +19,7 @@ Keep the visible slide focused on its question, operation, or result. Use notes 
 
 Write affirmative explanations of what is studied, measured, inferred, or proposed. Retain uncertainty at the point where it affects a claim or decision; remove repeated caveats, defensive comparisons, obsolete debate history, and statements about unrelated capabilities. There is no mandatory limitation paragraph. If a sentence only explains what the page is not doing, replace it with the actual operation or delete it unless the distinction is essential.
 
-Use audience-readable Chinese for the scientific object and operation. An internal term, acronym, or English label may follow after the meaning is clear, but must not carry the explanation by itself. When a fold, subset, window, or held-out group matters, state how it was constructed rather than replacing it with a looser analogy.
+For Chinese notes, use audience-readable Chinese for the scientific object and operation. An internal term, acronym, or English label may follow after the meaning is clear, but must not carry the explanation by itself. When a fold, subset, window, or held-out group matters, state how it was constructed rather than replacing it with a looser analogy.
 
 After the visible slide is final, run a bidirectional consistency check:
 

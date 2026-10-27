@@ -97,8 +97,8 @@ For a non-intuitive chart, record the x-axis, y-axis, statistic, analysis unit, 
 
 ## Evidence Status
 
-- `established`: supported by the user's validated prior work or direct primary evidence central to the deck.
-- `source-supported`: supported by an external primary source.
+- `established`: directly supported by the user's validated work.
+- `source-supported`: directly supported by reported evidence in an external primary source, including the paper under discussion.
 - `inference`: interpretation or synthesis not directly tested.
 - `proposal`: future design or claim to be tested.
 
