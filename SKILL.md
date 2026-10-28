@@ -17,7 +17,7 @@ Resolve the scientific decisions needed for the requested production or revision
 - **Journal Club** — a paper or small paper set whose evidence chain must be taught and critiqued. Read [workflows/journal-club.md](workflows/journal-club.md).
 - **Idea Discussion** — a proposed scientific direction, model, experiment, or project requiring scope control and testable design. Support discussion, authorized production, and iterative revision. Read [workflows/idea-discussion.md](workflows/idea-discussion.md).
 
-Route mixed decks section by section. Cover, agenda, transition, and closing pages inherit the routed scientific sections; they do not need their own archetype. Keep one visual system without forcing sections into one narrative grammar. A request to create or revise authorizes that work; a discussion-only request stays in discussion. Resolve consequential missing choices while continuing independent work.
+Route mixed decks section by section. Cover, agenda, transition, and closing pages inherit the routed scientific sections; they do not need their own archetype. Keep one visual system without forcing sections into one narrative grammar. Honor production authorization and agreed review steps. For Idea sections, use the [task and review agreement](workflows/idea-discussion.md#task-and-review-agreement). Resolve consequential missing choices while continuing independent work.
 
 ### 2. Audit sources and freeze claims
 
@@ -55,7 +55,7 @@ Read [references/scientific-content-contract.md](references/scientific-content-c
 
 ## Visual System And Reference Decks
 
-When the user asks to match an accepted deck, inspect representative rendered pages and notes first. Inherit its typography, hierarchy, spacing, figure treatment, semantic colors, citations, and note structure. Preserve a designated baseline as a separate file and verify it remains unchanged after producing a derivative. Otherwise use these defaults:
+When the user asks to match an accepted deck, inspect representative rendered pages and notes first. Identify each page's scientific job and why the sequence works, alongside its typography, hierarchy, spacing, figure treatment, semantic colors, citations, and notes. Inherit applicable conventions; verify reused scientific claims against their sources. Preserve a designated baseline as a separate file and verify it remains unchanged after producing a derivative. Otherwise use these defaults:
 
 - Canvas: 16:9, `1280 × 720`.
 - Palette: primary `#5B2C83`; dark purple `#321748`; secondary `#76529B`; pale purple `#F3F0F6`; text `#17131A`; secondary text `#655E6B`; border `#D8D2DC`. Green `#27856A` means completed/positive; red `#B84A62` means risk/failure.
@@ -65,6 +65,18 @@ When the user asks to match an accepted deck, inspect representative rendered pa
 - Keep titles to one line when reasonable. Give title, context line, and main content visibly separate vertical space.
 - Prefer white space, large evidence, simple dividers, and at most one pale information box. Avoid decorative card grids, repeated badges, and generic takeaway bars.
 - Do not use a pale-purple field merely to fill an empty region. Every colored region must group content, encode state, or create a necessary hierarchy.
+
+## Literature Screenshots
+
+Use authentic source captures according to their role:
+
+- **Article title:** retain the title, journal identity, and DOI or publication information from the publication PDF or official page. Preserve original typography and color; add a compact author, journal, year citation outside the capture.
+- **Figure:** display the experimental comparison supporting the judgment, with its exact panel locator and reading context.
+- **Short passage:** capture the original wording and enough context to preserve its meaning. Highlight only the relevant text without obscuring words; record the page or passage locator.
+
+Choose the combination the argument needs. Title and passage captures do not replace experimental evidence for a claim that requires inspecting results. Usually show a paper's full title once in a continuous presentation; later uses retain a short citation and locator.
+
+If using an author manuscript or supplement, identify that source accurately. Never fabricate a publisher header or present retyped text as an original capture. Keep source files, crop provenance, and locators in the asset record. Apply passage highlighting separately from the figure guardrails below.
 
 ## Figure And Layout Guardrails
 

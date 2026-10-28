@@ -21,6 +21,6 @@ For example, whether a model must predict a new condition can change the data sp
 - If the answer is essential, keep the dependent choice open and continue work that does not require it.
 - If the issue is a routine choice, use existing preferences and record a reasonable assumption.
 - If a scientific uncertainty needs experimental evidence, design the discriminating test and outcome-dependent next step rather than asking the user to guess the result.
-- If the user has authorized creation or revision, proceed within that scope. If the user asked for discussion before production, present the recommendation and wait for their direction to produce.
+- Follow the workflow's [task and review agreement](../workflows/idea-discussion.md#task-and-review-agreement) for discussion, draft review, and authorized production.
 
 Once the important choices are sufficiently defined for the requested work, update the current design and continue. Further questions should resolve new decisions, not repeat a completed interview.

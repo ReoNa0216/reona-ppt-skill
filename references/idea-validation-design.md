@@ -36,6 +36,8 @@ Distributional metrics are appropriate when a population distribution is an expl
 
 Explain what the model-derived candidate represents: an association, sensitivity, predicted response, or estimated effect under specified assumptions. Translate it into a measurable hypothesis and a feasible operation using relevant domain knowledge.
 
+Connect candidate selection to observed labels or outcomes, reliable feature identity, model evidence, domain knowledge, and practical manipulation as relevant. Keep model predictions distinct from experimentally measured function. Define useful analyses for plausible observed structures, including continuous variation; a proposed branch or cluster shape is not a prerequisite for scientific value.
+
 Choose the experiment according to the proposed claim. A candidate association, predictive benefit, and causal mechanism call for different comparisons. Add model complexity when the question and observations can support and evaluate the extra structure.
 
 For a proposed intervention, connect the operation, expected measured change, functional outcome, and decision rule. Use controls or corroboration where they resolve a plausible competing explanation. Keep the resulting experiment focused on the claim under discussion.

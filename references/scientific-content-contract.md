@@ -15,6 +15,12 @@ For a mixed deck, label each planning-artifact section clearly and merge its cla
 
 Archetype-specific artifacts are planning worksheets; the designated production source is the canonical content contract. Synthesize by stable claim/figure/asset IDs instead of copying every paragraph. Reconcile disagreements before producing the affected content.
 
+## Idea Review Draft
+
+For a new or substantially restructured Idea argument, provide a readable page-by-page draft in the existing planning source: actual title and visible text, selected panels or passages with placement, full speaker notes, sources, and the page's connection to adjacent pages. Outline labels such as “explain the model” do not substitute for the explanation.
+
+Apply the [task's review agreement](../workflows/idea-discussion.md#task-and-review-agreement). Carry accepted wording and evidence into the production source and verify the match; avoid maintaining divergent editable copies. Planning explanations and open decisions stay separate from audience-facing text. Focused revisions update only affected entries and dependencies.
+
 ## `scientific_handoff.md` Schema
 
 ```markdown
@@ -89,7 +95,7 @@ When an old deck is supplied as a reference, record whether each reused element 
 - `formula`: mathematical expression used in scientific reasoning.
 - `decorative`: minimal and never claim-bearing.
 
-For evidence, identify the exact source and page/panel or software state. For software evidence, record the reported source snapshot, development or release status, exact interface state, and whether the data are real or demonstrative. Crop from the authoritative original to isolate relevant evidence while retaining axes, legends, complete group labels, and annotations needed to interpret it. Routine cropping within an authorized edit needs no separate approval.
+For evidence, identify the exact source and page/panel or software state. For software evidence, record the reported source snapshot, development or release status, exact interface state, and whether the data are real or demonstrative. Apply the shared [screenshot and figure rules](../SKILL.md#literature-screenshots). Routine cropping within an authorized edit needs no separate approval.
 
 Explanatory assets may contain conceptual state diagrams, trajectories, or labeled teaching values when their illustrative role is clear. Generate or redraw these as schematics; preserve quantitative evidence from its original source. Do not fabricate measurements, sample counts, statistical annotations, or realistic assay images that could be mistaken for results. Record prompts and inspect generated labels and arrows against the intended scientific meaning.
 

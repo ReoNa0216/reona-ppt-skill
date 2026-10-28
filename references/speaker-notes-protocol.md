@@ -13,7 +13,7 @@ Explain, when relevant:
 5. the supported conclusion, with any qualification that changes its interpretation;
 6. why the next slide follows.
 
-Use spatial cues to locate the relevant comparison, then explain what to notice and why it matters. Use Arabic numerals for quantities. At first relevant use, explain unfamiliar abbreviations, material or cell identities, treatments, intervention targets, and comparison groups before interpreting their results. If a visual is conceptual or demo data, identify that role clearly.
+Use spatial cues to locate the relevant comparison, then explain what to notice and why it matters. Use Arabic numerals for quantities. At first relevant use, explain unfamiliar abbreviations, material or cell identities, treatments, intervention targets, and comparison groups before interpreting their results. Explain their role in the study, not just the expanded name. If a visual is conceptual or demo data, identify that role clearly.
 
 Keep the visible slide focused on its question, operation, or result. Use notes to teach the experiment, figure, or calculation. Keep citations, exact panel locators, source paths, and asset provenance in a compact source block or manifest, separate from the spoken explanation. Add supporting context only when it helps explain the current page, and identify it as context rather than a displayed panel.
 
@@ -65,12 +65,14 @@ Adapt this structure to an accepted reference deck; short transitions need only 
 
 ## Idea Discussion
 
-Use:
+For literature pages, follow:
 
-`question → evidence motivating the choice → proposed operation → schematic/formula meaning → validation → resulting decision`
+`research question and background → model and key comparison → reading the evidence → result → support for the page's judgment`
 
-For each claim-bearing panel, connect it to the deck's main question as `panel role → visible cue → supported inference → consequence for the proposed analysis or experiment`. Name the score, coordinate, comparison, or dynamic analysis that supplies the evidence; screen position alone supplies no scientific meaning.
+Supply the whole-study context needed to understand the selected panel, beyond its legend. Identify relevant off-slide support as background. Keep interpretation-changing conditions; omit procedural detail that serves no teaching or decision purpose. Check both brevity and whether the listener can explain why the study was done and what the result means.
 
-Explain the biological role of a main-deck formula before mathematical detail. When a costly modality or complex method is central to the proposal, explain which simpler alternative it must outperform and how failure would narrow the claim. State when a proposed capability depends on data or evidence not yet available.
+For design pages, follow:
 
-For an unfamiliar method, a short labeled numerical teaching example may explain inputs, intermediate operations, and output. Define the time coordinate and what remains fixed or changes when these affect interpretation. Keep this explanation tied to the current method and decision rather than adding a catalogue of unsupported applications.
+`question → evidence motivating the choice → proposed operation → validation → resulting decision`
+
+Explain schematic and formula meaning through the scientific objects. For unfamiliar models, trace a small valid example from input through operation to output before interpreting a statistic. Define the time coordinate, fixed elements, and available observations when consequential. Apply the workflow's [method comparison](../workflows/idea-discussion.md#connect-methods-to-a-test) rule and state when a proposed capability requires unavailable evidence.

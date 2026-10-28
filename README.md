@@ -6,7 +6,7 @@ A Codex skill for developing, discussing, creating, and revising PI-facing scien
 
 - Section-level routing for **Progress Update**, **Journal Club**, **Idea Discussion**, and mixed lab-meeting decks.
 - A mandatory Scientific Planning Gate before visual production.
-- Iterative Idea Discussion: compare designs, record accepted decisions, produce when authorized, and revise affected content from feedback.
+- Iterative Idea Discussion: build the argument from full-paper evidence, draft pages and notes for agreed review, then produce and revise within authorization.
 - Different emphasis for exploratory and execution decks, with optional pilot and prediction design guidance.
 - Progress workstream truth locks for starting premise, source priority, current supported progress, and displayed evidence.
 - Automatic Progress routing by claim dependency: computational, experimental, hybrid, or general.
@@ -14,7 +14,7 @@ A Codex skill for developing, discussing, creating, and revising PI-facing scien
 - Conditional Progress method teaching: audience prerequisites, complete examples, complementary schematics and notes, and evidence-matched comparisons.
 - Reported software snapshots, including development versions, and bidirectional slide–notes–manifest consistency checks.
 - Source-verified claims tied to displayed evidence, analysis units, boundaries, and evidence status.
-- Separate handling of scientific evidence, software UI, explanatory schematics, and formulas.
+- Authentic article-title, figure, and passage captures, distinct from explanatory schematics, software UI, and formulas.
 - Archetype-aware speaker notes and ReoNa-specific final QA.
 - Direct explanatory writing, reference-deck preservation, and one clear set of requested deliverables.
 
@@ -42,15 +42,16 @@ requested deliverable + export review → discussion and focused revision
   - `references/progress-method-teaching.md`: audience-level method explanation and comparison, with worked examples, purposeful visuals and notes, and evidence-scoped attribution.
 - `workflows/journal-club.md`: paper map, Figure evidence chain, teaching logic, and conclusion boundaries; Deep-read mode adds an `understanding_map.md` from a ChatGPT dialogue/notes file.
 - `workflows/idea-discussion.md`: evidence-first discussion, feasible alternatives, current design, authorized production, feedback-driven revision, and a decision-oriented ending.
+  - `references/idea-literature-narrative.md`: conditional guidance for full-paper selection, evidence roles, page relationships, and method comparisons.
   - `references/idea-validation-design.md`: conditional guidance for preliminary evidence, prediction tasks, appropriate metrics, and intervention tests.
 
 A mixed deck routes sections independently while sharing one visual identity and one canonical content source. Existing structured slide sources can serve as that record.
 
 ## What Idea Discussion Does
 
-It helps answer seven questions: why the problem matters, what evidence exists, what is feasible, what exactly to test, why the proposed approach is needed, how to evaluate it, and what decision follows. These are reasoning aids rather than a fixed set of slides.
+It connects the problem's value, existing evidence, a specific unresolved question, feasible measurements and analysis, and decisive validation. Literature serves that argument; page relationships determine how studies are combined or expanded.
 
-A discussion-only request stays in discussion. A request to create or revise authorizes production within that scope. The current design carries accepted choices forward; new feedback reopens the affected decisions and updates their dependent slides, notes, and figures. A separate approval ritual is not required.
+New or substantially restructured arguments receive a page-and-notes draft. The [task and review agreement](workflows/idea-discussion.md#task-and-review-agreement) governs whether it awaits review or proceeds within existing authorization. Accepted designs carry forward; focused revisions update only affected content and dependencies.
 
 The workflow preserves scientific rigor through source verification, credible alternatives, novelty beyond reproducing known results, and tests that can change the conclusion. It keeps internal audit concerns separate from audience-facing explanation.
 
@@ -58,7 +59,7 @@ The workflow preserves scientific rigor through source verification, credible al
 
 - Codex skill support.
 - A working presentation production pipeline, or an available `ppt-master` skill.
-- Microsoft YaHei, Arial, Georgia, and Consolas are the preferred text fonts; displayed and inline equations use Computer Modern or Latin Modern through math rendering.
+- Typography follows the [shared visual system](SKILL.md#visual-system-and-reference-decks) or the user's accepted reference.
 
 This repository does not vendor `ppt-master`.
 
@@ -76,7 +77,7 @@ Use $reona-ppt-skill to plan this mixed lab-meeting deck and complete the scient
 
 ## Validation
 
-The v2 workflow was forward-tested against v1 on four realistic planning tasks: Progress Update, Journal Club, Idea Discussion, and Mixed Deck. Independent A/B evaluation scored v1 at `76/80` and v2 at `79/80`; a targeted Journal Club fix then scored `20/20` in re-evaluation. Later refinements use clearly labeled maintenance audits or forward applications and do not inherit the independent A/B score. The current Progress refinement addresses shared-rule conflicts, duplicated planning fields, and conditional teaching and evidence requirements. Its validation is recorded separately from historical candidates. See [VALIDATION.md](VALIDATION.md).
+The v2 workflow received an independent four-task A/B evaluation. Later refinements have separately scoped planning, consistency, and export checks; they do not inherit its score. See [VALIDATION.md](VALIDATION.md) for tested versions, methods, and results.
 
 ## Scope
 
